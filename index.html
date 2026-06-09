@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    
+    <title>D-Site</title>
+    <meta id="meta-description" name="description" content="Мы создаем высокопроизводительные, доступные и визуально ошеломляющие веб-приложения и сайты, которые привлекают внимание и масштабируются вместе с вашим бизнесом."/>
+    <meta name="keywords" content="создание сайтов, лендинг, сайт для бизнеса, веб-разработка, заказать сайт, разработка приложений, web development, landing page"/>
+    <meta name="robots" content="index, follow"/>
+    
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="D-Site — Создание современных сайтов под ключ"/>
+    <meta property="og:description" content="Высокопроизводительные и визуально ошеломляющие веб-приложения для вашего бизнеса."/>
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"/>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary": "#303036",
+                      "surface-container-low": "#1c1b1c",
+                      "error": "#ffb4ab",
+                      "secondary-fixed-dim": "#c0c1ff",
+                      "primary": "#c8c5cd",
+                      "on-primary-container": "#7a797f",
+                      "inverse-surface": "#e5e1e2",
+                      "surface-container-highest": "#353435",
+                      "surface-container-lowest": "#0e0e0e",
+                      "on-primary-fixed-variant": "#47464c",
+                      "tertiary": "#ddb7ff",
+                      "tertiary-fixed-dim": "#ddb7ff",
+                      "surface-variant": "#353435",
+                      "surface-tint": "#c8c5cd",
+                      "on-background": "#e5e1e2",
+                      "on-tertiary-fixed": "#2c0051",
+                      "on-surface": "#e5e1e2",
+                      "primary-fixed": "#e4e1e9",
+                      "on-error-container": "#ffdad6",
+                      "on-error": "#690005",
+                      "on-surface-variant": "#c8c5cb",
+                      "outline": "#929095",
+                      "surface": "#141314",
+                      "secondary": "#c0c1ff",
+                      "on-tertiary": "#490080",
+                      "surface-bright": "#3a3939",
+                      "inverse-primary": "#5f5d64",
+                      "surface-dim": "#141314",
+                      "on-primary-fixed": "#1b1b20",
+                      "on-tertiary-container": "#a14ef0",
+                      "on-secondary-fixed-variant": "#2f2ebe",
+                      "on-tertiary-fixed-variant": "#6900b3",
+                      "background": "#141314",
+                      "secondary-container": "#3131c0",
+                      "tertiary-container": "#14002a",
+                      "on-secondary-container": "#b0b2ff",
+                      "outline-variant": "#47464b",
+                      "primary-fixed-dim": "#c8c5cd",
+                      "primary-container": "#0a0a0f",
+                      "inverse-on-surface": "#313030",
+                      "error-container": "#93000a",
+                      "tertiary-fixed": "#f0dbff",
+                      "surface-container": "#201f20",
+                      "secondary-fixed": "#e1e0ff",
+                      "on-secondary-fixed": "#07006c",
+                      "on-secondary": "#1000a9",
+                      "surface-container-high": "#2b2a2a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "gutter": "32px",
+                      "section-padding-desktop": "160px",
+                      "section-padding-mobile": "80px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "display-xl-mobile": ["Geist"],
+                      "headline-lg": ["Geist"],
+                      "headline-md": ["Geist"],
+                      "body-lg": ["Inter"],
+                      "display-xl": ["Geist"],
+                      "label-sm": ["JetBrains Mono"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "display-xl-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                      "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                      "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                      "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                      "display-xl": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                      "label-sm": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                      "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+              }
+            },
+          },
+        }
+      </script>
+    <style>
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob { animation: blob 7s infinite; }
+        .animation-delay-2000 { animation-delay: 2s; }
+        .animation-delay-4000 { animation-delay: 4s; }
+        .glass-panel {
+            background: rgba(20, 19, 20, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card {
+            background: rgba(43, 42, 42, 0.2);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+        .glass-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(43, 42, 42, 0.3);
+        }
+        .btn-primary {
+            background: linear-gradient(to right, theme('colors.secondary-container'), theme('colors.tertiary-container'));
+            color: #ffffff;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .btn-primary:hover {
+            box-shadow: 0 0 25px 8px rgba(49, 49, 192, 0.5);
+            transform: translateY(-2px);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px) scale(0.95);
+            transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .reveal.active { opacity: 1; transform: translateY(0) scale(1); }
+        .nav-scrolled {
+            background: rgba(20, 19, 20, 0.7);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            overflow-x: hidden;
+        }
+        .noise-overlay {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none; z-index: 9999; opacity: 0.03;
+            background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E');
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+    <script crossorigin="" src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin="" src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<div class="noise-overlay"></div>
+<div id="root"></div>
+
+<script type="text/babel">
+        const { useState, useEffect, useContext, createContext } = React;
+
+        const translations = {
+            RU: {
+                seoTitle: "D-Site — Создание сайтов под ключ | Лендинги и бизнес-сайты",
+                seoDesc: "Мы создаем высокопроизводительные, доступные и визуально ошеломляющие веб-приложения и сайты, которые масштабируются вместе с вашим бизнесом.",
+                nav: { benefits: "Преимущества", portfolio: "Портфолио", pricing: "Цены" },
+                btnOrder: "Заказать сайт",
+                hero: { 
+                    label: "Улучшаем продвижение компании", 
+                    heading1: "Создание", 
+                    heading2: "Сайтов", 
+                    desc: "Мы создаем высокопроизводительные, доступные и визуально ошеломляющие веб-приложения, которые привлекают внимание и масштабируются вместе с вашим бизнесом." 
+                },
+                social: "Наши социальные сети",
+                portfolio: { 
+                    heading: "Избранные работы", 
+                    desc: "Витрина наших недавних проектов. Нажмите на карточку, чтобы посмотреть код на GitHub.",
+                    viewGithub: "Смотреть на GitHub",
+                    mainProject: "Основной проект",
+                    projectTitle: "My Portfolio Website",
+                    projectDesc: "Весь исходный код и структура моего актуального портфолио в одном репозитории.",
+                    imgAlt: "Превью проекта портфолио на D-Site"
+                },
+                pricing: {
+                    heading: "Тарифы",
+                    desc: "Прозрачное ценообразование для ваших задач",
+                    plans: [
+                        { name: "Лендинг проект", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Одностраничный сайт", "Адаптивный дизайн", "SEO-оптимизация", "Срок 3-5 дней"] },
+                        { name: "Сайт для Бизнеса", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Многостраничный сайт", "Индивидуальный дизайн", "Настройка аналитики", "Срок 7-14 дней"] }
+                    ],
+                    btnChoose: "Выбрать тариф"
+                },
+                footer: "Все права защищены."
+            },
+            EN: {
+                seoTitle: "D-Site — Custom Web Development | Landing Pages & Business Sites",
+                seoDesc: "We build high-performance, accessible, and visually stunning web applications that capture attention and scale with your business.",
+                nav: { benefits: "Benefits", portfolio: "Portfolio", pricing: "Pricing" },
+                btnOrder: "Order a Site",
+                hero: { 
+                    label: "Elevating Digital Experiences", 
+                    heading1: "Building", 
+                    heading2: "Websites", 
+                    desc: "We build high-performance, accessible, and visually stunning web applications that capture attention and scale with your business." 
+                },
+                social: "Our Social Media",
+                portfolio: { 
+                    heading: "Selected Works", 
+                    desc: "A showcase of our recent projects. Click on the card to view the code on GitHub.",
+                    viewGithub: "View on GitHub",
+                    mainProject: "Main Project",
+                    projectTitle: "My Portfolio Website",
+                    projectDesc: "All the source code and structure of my current portfolio in one repository.",
+                    imgAlt: "Portfolio project preview on D-Site"
+                },
+                pricing: {
+                    heading: "Pricing",
+                    desc: "Transparent pricing for your tasks",
+                    plans: [
+                        { name: "Landing Project", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Single-page site", "Responsive design", "SEO optimization", "3-5 days delivery"] },
+                        { name: "Business Site", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Multi-page site", "Custom design", "Analytics setup", "7-14 days delivery"] }
+                    ],
+                    btnChoose: "Choose Plan"
+                },
+                footer: "All rights reserved."
+            },
+            ES: {
+                seoTitle: "D-Site — Creación de Sitios Web | Páginas de Aterrizaje",
+                seoDesc: "Creamos aplicaciones web de alto rendimiento, accesibles y visualmente impresionantes que captan la atención y crecen con su negocio.",
+                nav: { benefits: "Beneficios", portfolio: "Portafolio", pricing: "Precios" },
+                btnOrder: "Pedir un Sitio",
+                hero: { 
+                    label: "Elevando Experiencias Digitales", 
+                    heading1: "Creación de", 
+                    heading2: "Sitios Web", 
+                    desc: "Creamos aplicaciones web de alto rendimiento, accesibles y visualmente impresionantes que captan la atención y crecen con su negocio." 
+                },
+                social: "Nuestras Redes Sociales",
+                portfolio: { 
+                    heading: "Trabajos Destacados", 
+                    desc: "Una muestra de nuestros proyectos recientes. Haga clic en la tarjeta para ver el código en GitHub.",
+                    viewGithub: "Ver en GitHub",
+                    mainProject: "Proyecto Principal",
+                    projectTitle: "Mi Sitio Web de Portafolio",
+                    projectDesc: "Todo el código fuente y la estructura de mi portafolio actual en un solo repositorio.",
+                    imgAlt: "Vista previa del proyecto de portafolio"
+                },
+                pricing: {
+                    heading: "Precios",
+                    desc: "Precios transparentes para tus tareas",
+                    plans: [
+                        { name: "Proyecto Landing", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Sitio de una página", "Diseño responsivo", "Optimización SEO", "Entrega 3-5 días"] },
+                        { name: "Sitio para Negocios", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Sitio multipágina", "Diseño personalizado", "Configuración de analíticas", "Entrega 7-14 días"] }
+                    ],
+                    btnChoose: "Elegir Plan"
+                },
+                footer: "Todos los derechos reservados."
+            },
+            FR: {
+                seoTitle: "D-Site — Création de Sites Web Professionnels",
+                seoDesc: "Nous créons des applications web de haute performance, accessibles et visuellement époustouflantes.",
+                nav: { benefits: "Avantages", portfolio: "Portfolio", pricing: "Tarifs" },
+                btnOrder: "Commander un Site",
+                hero: { label: "Améliorer l'expérience numérique", heading1: "Création de", heading2: "Sites Web", desc: "Nous créons des applications web de haute performance, accessibles et visuellement époustouflantes qui captent l'attention et évoluent avec votre entreprise." },
+                social: "Nos Réseaux Sociaux",
+                portfolio: { heading: "Travaux Sélectionnés", desc: "Une vitrine de nos projets récents. Cliquez sur la carte pour voir le code sur GitHub.", viewGithub: "Voir sur GitHub", mainProject: "Projet Principal", projectTitle: "Mon Site Portfolio", projectDesc: "Tout le code source et la structure de mi portfolio actuel dans un seul dépôt.", imgAlt: "Aperçu du projet" },
+                pricing: { heading: "Tarifs", desc: "Une tarification transparente pour vos besoins", plans: [ { name: "Projet Landing", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Site d'une seule page", "Design adaptatif", "Optimisation SEO", "Livraison 3-5 jours"] }, { name: "Site d'Entreprise", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Site multi-pages", "Design personnalisé", "Configuration analytique", "Livraison 7-14 jours"] } ], btnChoose: "Choisir un forfait" },
+                footer: "Tous droits réservés."
+            },
+            AR: {
+                seoTitle: "D-Site — تصميم وتطوير المواقع الإلكترونية الاحترافية",
+                seoDesc: "نحن نصمم تطبيقات ويب عالية الأداء، سهلة الاستخدام، ومذهلة بصرياً لتطوير أعمالك.",
+                nav: { benefits: "المميزات", portfolio: "أعمالنا", pricing: "الأسعار" },
+                btnOrder: "طلب موقع",
+                hero: { label: "ارتقاء بالتجارب الرقمية", heading1: "تصميم وتطوير", heading2: "المواقع", desc: "نحن نصمم تطبيقات ويب عالية الأداء، سهلة الاستخدام، ومذهلة بصرياً تجذب الانتباه وتتطور مع نمو أعمالك." },
+                social: "حساباتنا على وسائل التواصل الاجتماعي",
+                portfolio: { heading: "أعمال مختارة", desc: "عرض لمشاريعنا الأخيرة. اضغط على البطاقة لمشاهدة الكود على GitHub.", viewGithub: "عرض على GitHub", mainProject: "المشروع الرئيسي", projectTitle: "موقع معرض أعمالي", projectDesc: "جميع الأكواد البرمجية وهيكل معرض أعمالي الحالي في مستودع واحد.", imgAlt: "معاينة المشروع" },
+                pricing: { heading: "الأسعار", desc: "أسعار شفافة ومناسبة لاحتياجاتك", plans: [ { name: "مشروع صفحة هبوط", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["موقع من صفحة واحدة", "تصميم متجاوب بالكامل", "تحسين محركات البحث SEO", "التسليم خلال 3-5 أيام"] }, { name: "موقع للشركات والأعمال", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["موقع متعدد الصفحات", "تصميم مخصص وفردي", "إعداد تحليلات الموقع", "التسليم خلال 7-14 يوماً"] } ], btnChoose: "اختر الباقة" },
+                footer: "جميع الحقوق محفوظة."
+            },
+            ZH: {
+                seoTitle: "D-Site — 高端定制网站建设与高端Web应用开发",
+                seoDesc: "我们打造高性能、无障碍访问且极具视觉震撼力的 Web 应用，助力企业数字化升级。",
+                nav: { benefits: "核心优势", portfolio: "精选案例", pricing: "服务资费" },
+                btnOrder: "定制专属网站",
+                hero: { label: "助力企业数字化升级", heading1: "高端定制", heading2: "网站建设", desc: "我们打造高性能、无障碍访问且极具视觉震撼力的 Web 应用，吸引目标客户并随您的业务规模完美扩展。" },
+                social: "关注我们",
+                portfolio: { heading: "精选作品集", desc: "我们近期项目的集中展示。点击卡片即可在 GitHub 上查看源码。", viewGithub: "在 GitHub 上查看", mainProject: "核心主推项目", projectTitle: "我的个人作品集网站", projectDesc: "当前作品集的所有源代码和项目结构，均托管在单一仓库中。", imgAlt: "项目预览" },
+                pricing: { heading: "透明资费", desc: "针对您的具体业务需求，提供清晰透明的定价方案", plans: [ { name: "单页着陆页项目", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["单页面精简布局", "全响应式自适应设计", "专业级 SEO 基础优化", "交付周期 3-5 个工作日"] }, { name: "商务企业官网", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["多页面深度定制", "独一无二的视觉设计", "全套数据分析配置", "交付周期 7-14 个工作日"] } ], btnChoose: "选择此方案" },
+                footer: "版权所有，保留一切权利。"
+            },
+            JA: {
+                seoTitle: "D-Site — 高品質なWebサイト制作・LP開発・ビジネスサイト",
+                seoDesc: "ビジネスの growth に合わせて拡張可能で、高性能かつアクセシブルで美しいWebアプリケーションを開発します。",
+                nav: { benefits: "強み・特徴", portfolio: "制作実績", pricing: "料金プラン" },
+                btnOrder: "Webサイトを注文する",
+                hero: { label: "デジタル体験の価値を高める", heading1: "高品質な", heading2: "Webサイト制作", desc: "私たちは、ビジネスの成長に合わせて拡張可能で、ユーザーの視線を釘付けにする、高性能かつアクセсиブルで美しいWebアプリケーションを開発します。" },
+                social: "公式SNSアカウント",
+                portfolio: { heading: "厳選された実績", desc: "最近のプロジェクトをご紹介します。カードをクリックするとGitHubでコードをご覧いただけます。", viewGithub: "GitHubで見る", mainProject: "メインプロジェクト", projectTitle: "ポートфоリオウェブサイト", projectDesc: "現在公開中のポートフォリオのすべてのソースコードと構造が1つのリポジトリに集約されています。", imgAlt: "実績プレビュー" },
+                pricing: { heading: "料金プラン", desc: "お客様の課題に合わせた透明性の高い価格設定", plans: [ { name: "ランディングページ制作", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["シングルページ構成", "レスポンシブ対応設計", "内部SEO最適化", "納期：3〜5営業日"] }, { name: "ビジネス向け公式サイト", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["マルチページ構成", "完全オリジナルデザイン", "アクセス解析の初期設定", "納期：7〜14営業日"] } ], btnChoose: "プランを選択する" },
+                footer: "All rights reserved. 無断転載を禁じます。"
+            },
+            KO: {
+                seoTitle: "D-Site — 맞춤형 웹사이트 제작 및 고성능 웹 개발",
+                seoDesc: "시선을 사로잡고 비즈니스 성장에 맞춰 유연하게 확장할 수 있는 고성능 웹 애플리케이션을 제작합니다.",
+                nav: { benefits: "주요 특징", portfolio: "포트폴리오", pricing: "가격 정책" },
+                btnOrder: "웹사이트 제작 문의",
+                hero: { label: "디지털 경험의 가치를 높이다", heading1: "맞춤형", heading2: "웹사이트 제작", desc: "우리는 사용자의 시선을 사로잡고 비즈니스 성장에 맞춰 유연하게 확장할 수 있는 고성능의 시각적으로도 아름다운 웹 애플리케이션을 제작합니다." },
+                social: "공식 소셜 미디어",
+                portfolio: { heading: "주요 제작 사례", desc: "최근 진행한 프로젝트입니다. 카드를 클릭하면 GitHub에서 소스 코드를 확인할 수 있습니다.", viewGithub: "GitHub에서 보기", mainProject: "메인 프로젝트", projectTitle: "포트폴리오 웹사이트", projectDesc: "현재 운영 중인 포트폴리오의 모든 소스 코드와 프로젝트 구조가 단일 리포지토리에 포함되어 있습니다.", imgAlt: "프로젝트 미리보기" },
+                pricing: { heading: "가격 정책", desc: "귀하의 비즈니스 목적에 맞춘 투명한 비용 제안", plans: [ { name: "랜딩 페이지 프로젝트", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["단일 페이지 구성", "반응형 웹 디자인", "기본 SEO 최적화", "작업 기간: 3~5일"] }, { name: "비즈니스 기업형 웹사이트", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["다중 페이지 구성", "독창적인 커스텀 디자인", "데이터 분석 툴 연동", "작업 기간: 7~14일"] } ], btnChoose: "요금제 선택" },
+                footer: "모든 권리 보유."
+            },
+            PT: {
+                seoTitle: "D-Site — Criação de Sites Profissionais e Landing Pages",
+                seoDesc: "Desenvolvemos aplicações web de alto desempenho, acessíveis e visualmente impressionantes para o seu negócio.",
+                nav: { benefits: "Benefícios", portfolio: "Portfólio", pricing: "Preços" },
+                btnOrder: "Pedir um Website",
+                hero: { label: "Elevando Experiências Digitais", heading1: "Criação de", heading2: "Sites Web", desc: "Desenvolvemos aplicações web de alto desempenho, acessíveis e visualmente impressionantes que capturam a atenção e escalam junto com o seu negócio." },
+                social: "Nossas Redes Sociales",
+                portfolio: { heading: "Trabalhos Selecionados", desc: "Uma vitrine dos nossos projetos recentes. Clique no cartão para ver o código no GitHub.", viewGithub: "Ver no GitHub", mainProject: "Projeto Principal", projectTitle: "Meu Site de Portfólio", projectDesc: "Todo o código-fonte e estrutura do meu portfólio atual em um único repositório.", imgAlt: "Visualização do projeto" },
+                pricing: { heading: "Preços", desc: "Preços transparentes para as suas necessidades", plans: [ { name: "Projeto Landing Page", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Site de página única", "Design responsivo", "Otimização para SEO", "Prazo de 3-5 dias"] }, { name: "Site Corporativo", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Site multi-páginas", "Design exclusivo", "Configuração de analíticos", "Prazo de 7-14 dias"] } ], btnChoose: "Escolher Plano" },
+                footer: "Todos os direitos reservados."
+            },
+            TR: {
+                seoTitle: "D-Site — Kurumsal Web Tasarım & Landing Page Çözümleri",
+                seoDesc: "İşletmenizle birlikte büyüyen, yüksek performanslı ve kusursuz web uygulamaları geliştiriyoruz.",
+                nav: { benefits: "Avantajlar", portfolio: "Portfolyo", pricing: "Fiyatlandırma" },
+                btnOrder: "Web Sitesi Sipariş Et",
+                hero: { label: "Dijital Deneyimleri Yükseltiyoruz", heading1: "Profesyonel", heading2: "Web Tasarım", desc: "İşletmenizle birlikte büyüyen, dikkat çeken, yüksek performanslı, erişilebilir ve görsel açıdan kusursuz web uygulamaları geliştiriyoruz." },
+                social: "Sosyal Medya Hesaplarımız",
+                portfolio: { heading: "Öne Çıkan Çalışmalar", desc: "Son projelerimizden bazıları. Kodları GitHub'da incelemek için karta tıklayın.", viewGithub: "GitHub'da Görüntüle", mainProject: "Ana Proje", projectTitle: "Portfolyo Web Sitem", projectDesc: "Mevcut portfolyomun tüm kaynak kodları ve yapısı tek bir depoda yer almaktadır.", imgAlt: "Proje önizlemesi" },
+                pricing: { heading: "Fiyatlandırma", desc: "Hedefleriniz için şeffaf fiyatlandırma politikası", plans: [ { name: "Landing Page Projesi", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Tek sayfa web sitesi", "Mobil uyumlu tasarım", "SEO optimizasyonu", "3-5 gün teslim süresi"] }, { name: "Kurumsal İş Sitesi", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Çok sayfalı web sitesi", "Özel tasarım", "Analitik araçları kurulumu", "7-14 gün teslim süresi"] } ], btnChoose: "Planı Seç" },
+                footer: "Tüm hakları saklıdır."
+            },
+            IT: {
+                seoTitle: "D-Site — Creazione Siti Web Professionali e Landing Page",
+                seoDesc: "Creiamo applicazioni web ad alte prestazioni, accessibili e visivamente straordinarie che crescono con la tua attività.",
+                nav: { benefits: "Vantaggi", portfolio: "Portfolio", pricing: "Prezzi" },
+                btnOrder: "Ordina un Sito",
+                hero: { label: "Eleviamo le Esperienze Digitali", heading1: "Creazione di", heading2: "Siti Web", desc: "Creiamo applicazioni web ad alte prestazioni, accessibili e visivamente straordinarie che catturano l'attenzione e crescono con la tua attività." },
+                social: "I Nostri Canali Social",
+                portfolio: { heading: "Lavori Selezionati", desc: "Una vetrina dei nostri progetti recenti. Clicca sulla scheda per vedere il codice su GitHub.", viewGithub: "Vedi su GitHub", mainProject: "Progetto Principale", projectTitle: "Il Mio Sito Portfolio", projectDesc: "Tutto il codice sorgente e la struttura del mio portfolio attuale in un unico repository.", imgAlt: "Anteprima progetto" },
+                pricing: { heading: "Prezzi", desc: "Prezzi trasparenti per i tuoi obiettivi", plans: [ { name: "Progetto Landing Page", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Sito a pagina singola", "Design responsive", "Ottimizzazione SEO", "Consegna in 3-5 giorni"] }, { name: "Sito per il Business", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Sito multi-pagina", "Design personalizzato", "Configurazione analytics", "Consegna in 7-14 giorni"] } ], btnChoose: "Scegli il Piano" },
+                footer: "Tutti i diritti riservati."
+            },
+            HI: {
+                seoTitle: "D-Site — व्यावसायिक वेबसाइट निर्माण और वेब विकास解决方案",
+                seoDesc: "हम उच्च प्रदर्शन वाली, सुलभ और दिखने में शानदार वेब एप्लिकेशन बनाते हैं जो आपके व्यवसाय के साथ बढ़ती हैं।",
+                nav: { benefits: "लाभ", portfolio: "पोर्टफोलियो", pricing: "कीमतें" },
+                btnOrder: "वेबसाइट का आर्डर दें",
+                hero: { label: "डिजिटल अनुभवों को बेहतर बनाना", heading1: "वेबसाइट", heading2: "निर्माण", desc: "हम उच्च प्रदर्शन वाली, सुलभ और दिखने में शानदार वेब एप्लिकेशन बनाते हैं जो ध्यान आकर्षित करती हैं और आपके व्यवसाय के साथ बढ़ती हैं।" },
+                social: "हमारे सोशल मीडिया",
+                portfolio: { heading: "चुनिंदा कार्य", desc: "हमारे हालिया प्रोजेक्ट्स की झलक। गिटहब पर कोड देखने के लिए कार्ड पर क्लिक करें।", viewGithub: "GitHub पर देखें", mainProject: "मुख्य प्रोजेक्ट", projectTitle: "मेरी पोर्टफोलियो वेबसाइट", projectDesc: "मेरे वर्तमान पोर्टफोलियो का पूरा सोर्स कोड और स्ट्रक्चर एक ही रिपोजिटरी में उपलब्ध है।", imgAlt: "परियोजना पूर्वावलोकन" },
+                pricing: { heading: "कीमतें", desc: "आपके कार्यों के लिए पारदर्शी मूल्य निर्धारण", plans: [ { name: "लैंडिंग पेज प्रोजेक्ट", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["एक पेज की वेबसाइट", "उत्तरदायी डिजाइन (Responsive)", "SEO अनुकूलन", "3-5 दिनों का समय"] }, { name: "व्यापार के लिए वेबसाइट", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["बहु-पृष्ठ वेबसाइट", "कस्टम डिजाइन", "एनालिटिक्स सेटअप", "7-14 दिनों का समय"] } ], btnChoose: "प्लान चुनें" },
+                footer: "सर्वाधिकार सुरक्षित।"
+            },
+            NL: {
+                seoTitle: "D-Site — Professionele Website Laten Maken & Web Development",
+                seoDesc: "Wij bouwen hoogwaardige, toegankelijke en visueel verbluffende webapplicaties die meeschalen met uw bedrijf.",
+                nav: { benefits: "Voordelen", portfolio: "Portfolio", pricing: "Tarieven" },
+                btnOrder: "Website Bestellen",
+                hero: { label: "Digitale Ervaringen Verbeteren", heading1: "Bouwen van", heading2: "Websites", desc: "Wij bouwen hoogwaardige, toegankelijke en visueel verbluffende webapplicaties die de aandacht trekken en meeschalen met uw bedrijf." },
+                social: "Onze Sociale Media",
+                portfolio: { heading: "Geselecteerd Werk", desc: "Een overzicht van onze recente projecten. Klik op de kaart om de code op GitHub te bekijken.", viewGithub: "Bekijk op GitHub", mainProject: "Hoofdproject", projectTitle: "Mijn Portfolio Website", projectDesc: "Alle broncode en de structuur van mijn huidige portfolio in één repository.", imgAlt: "Project voorbeeld" },
+                pricing: { heading: "Tarieven", desc: "Transparante prijzen voor uw behoeften", plans: [ { name: "Landing Page Project", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Single-page website", "Responsive design", "SEO optimalisatie", "3-5 dagen levertijd"] }, { name: "Zakelijke Website", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Multi-page website", "Uniek ontwerp", "Inrichting analytics", "7-14 dagen levertijd"] } ], btnChoose: "Kies Plan" },
+                footer: "Alle rechten voorbehouden."
+            },
+            PL: {
+                seoTitle: "D-Site — Tworzenie Stron Internetowych i Nowoczesnych Aplikacji WWW",
+                seoDesc: "Tworzymy wydajne, dostępne i zachwycające wizualnie aplikacje internetowe dostosowane do Twojego biznesu.",
+                nav: { benefits: "Korzyści", portfolio: "Portfolio", pricing: "Cennik" },
+                btnOrder: "Zamów Stronę",
+                hero: { label: "Podnoszenie Jakości Doświadczeń Cyfrowych", heading1: "Tworzenie", heading2: "Stron WWW", desc: "Tworzymy wydajne, dostępne i zachwycające wizualnie aplikacje internetowe, które przyciągają uwagę i rozwijają się wraz z Twoim biznesem." },
+                social: "Nasze Media Społecznościowe",
+                portfolio: { heading: "Wybrane Projekty", desc: "Prezentacja naszych ostatnich prac. Kliknij kartę, aby zobaczyć kod na GitHubie.", viewGithub: "Zobacz na GitHubie", mainProject: "Główny Projekt", projectTitle: "Moja Strona Portfolio", projectDesc: "Cały kod źródłowy i struktura mojego aktualного portfolio w jednym repozytorium.", imgAlt: "Podgląd projektu" },
+                pricing: { heading: "Cennik", desc: "Przejrzyste ceny dopasowane do Twoich potrzeb", plans: [ { name: "Projekt Landing Page", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Strona jednostronicowa", "Responsywny design", "Optymalizacja SEO", "Czas realizacji 3-5 dni"] }, { name: "Strona dla Biznesu", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Strona wielostronicowa", "Indywidualny projekt", "Konfiguracja analityki", "Czas realizacji 7-14 dni"] } ], btnChoose: "Wybierz Plan" },
+                footer: "Wszelkie prawa zastrzeżone."
+            },
+            SV: {
+                seoTitle: "D-Site — Skapa Hemsida | Professionell Webbutveckling & LP",
+                seoDesc: "Vi bygger högpresterande, tillgängliga och visuellt slående webbapplikationer som skalar med din verksamhet.",
+                nav: { benefits: "Fördelar", portfolio: "Portfolio", pricing: "Priser" },
+                btnOrder: "Beställ Hemsida",
+                hero: { label: "Höjer Digitala Upplevelser", heading1: "Skapande av", heading2: "Hemsidor", desc: "Vi bygger högpresterande, tillgängliga och visuellt slående webbapplikationer som fångar uppmärksamhet och skalar med din verksamhet." },
+                social: "Våra Socialer Medier",
+                portfolio: { heading: "Utvalda Projekt", desc: "En presentation av våra senaste projekt. Klicka på kortet för att se koden på GitHub.", viewGithub: "Visa på GitHub", mainProject: "Huvudprojekt", projectTitle: "Min Portfoliowebbplats", projectDesc: "All källkod och struktur för min nuvarande portfolio i ett och samma lagringsutrymme.", imgAlt: "Projekt förhandsvisning" },
+                pricing: { heading: "Prissättning", desc: "Transparenta priser för dina behov", plans: [ { name: "Landningssida", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Ensidig webbplats", "Responsiv design", "SEO-optimering", "Leverans 3-5 dagar"] }, { name: "Företagshemsida", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Flersidig webbplats", "Anpassad design", "Konfiguration av analysverktyg", "Leverans 7-14 dagar"] } ], btnChoose: "Välj Plan" },
+                footer: "Alla rättigheter förbehållna."
+            }
+        };
+
+        const availableLanguages = [
+            { code: 'RU', name: 'Russian' },
+            { code: 'EN', name: 'English' },
+            { code: 'ES', name: 'Spanish' },
+            { code: 'FR', name: 'French' },
+            { code: 'AR', name: 'Arabic' },
+            { code: 'ZH', name: 'Chinese' },
+            { code: 'JA', name: 'Japanese' },
+            { code: 'KO', name: 'Korean' },
+            { code: 'PT', name: 'Portuguese' },
+            { code: 'TR', name: 'Turkish' },
+            { code: 'IT', name: 'Italian' },
+            { code: 'HI', name: 'Hindi' },
+            { code: 'NL', name: 'Dutch' },
+            { code: 'PL', name: 'Polish' },
+            { code: 'SV', name: 'Swedish' }
+        ];
+
+        const cleanAvailableLanguages = availableLanguages.filter(l => l.code);
+
+        const LanguageContext = createContext();
+        const LanguageProvider = ({ children }) => {
+            const [lang, setLang] = useState('RU');
+            const t = translations[lang] || translations['EN'];
+            
+            useEffect(() => {
+                document.documentElement.lang = lang.toLowerCase();
+                
+                // Динамическое обновление SEO-тегов при смене языка
+                document.title = t.seoTitle || "D-Site";
+                const metaDesc = document.getElementById('meta-description');
+                if (metaDesc) {
+                    metaDesc.setAttribute('content', t.seoDesc || "");
+                }
+
+                if (lang === 'AR') {
+                    document.documentElement.dir = 'rtl';
+                } else {
+                    document.documentElement.dir = 'ltr';
+                }
+            }, [lang, t]);
+
+            return <LanguageContext.Provider value={{ lang, setLang, t }}>{children}</LanguageContext.Provider>;
+        };
+
+        const useScrollReveal = () => {
+            useEffect(() => {
+                const reveals = document.querySelectorAll('.reveal');
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+                }, { threshold: 0.1 });
+                reveals.forEach(reveal => observer.observe(reveal));
+                return () => observer.disconnect();
+            }, []);
+        };
+
+        const IconCode = ({ className }) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>;
+        const IconCheck = ({ className }) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className={className}><polyline points="20 6 9 17 4 12"></polyline></svg>;
+
+        const LanguageSwitcher = () => {
+            const { lang, setLang } = useContext(LanguageContext);
+            const [isOpen, setIsOpen] = useState(false);
+            const [search, setSearch] = useState('');
+            
+            const filteredLangs = cleanAvailableLanguages.filter(l => 
+                l.name.toLowerCase().includes(search.toLowerCase()) || 
+                l.code.toLowerCase().includes(search.toLowerCase())
+            );
+            
+            return (
+                <div className="relative">
+                    <button 
+                        onClick={() => setIsOpen(!isOpen)}
+                        className="flex items-center gap-1 text-on-surface hover:text-secondary transition-colors focus:outline-none"
+                        aria-label="Change language"
+                    >
+                        <span className="font-label-sm">{lang}</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                    {isOpen && (
+                        <div className="absolute right-0 mt-2 w-48 glass-panel rounded-lg shadow-xl overflow-hidden z-50 border border-white/10 flex flex-col dir-ltr" style={{direction: 'ltr'}}>
+                            <div className="p-2 border-b border-white/10">
+                                <input 
+                                    type="text" 
+                                    placeholder="Search language..." 
+                                    value={search}
+                                    onChange={(e) => setSearch(e.target.value)}
+                                    className="w-full bg-white/5 border border-white/10 rounded px-2 py-1.5 text-sm text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-secondary transition-colors"
+                                />
+                            </div>
+                            <div className="max-h-60 overflow-y-auto custom-scrollbar">
+                                {filteredLangs.map(l => (
+                                    <button
+                                        key={l.code}
+                                        onClick={() => { setLang(l.code); setIsOpen(false); setSearch(''); }}
+                                        className={`w-full text-left px-4 py-2.5 text-sm hover:bg-white/10 transition-colors flex justify-between items-center ${lang === l.code ? 'text-secondary font-bold' : 'text-on-surface-variant'}`}
+                                    >
+                                        <span>{l.name}</span>
+                                        <span className="text-xs opacity-50">{l.code}</span>
+                                    </button>
+                                ))}
+                                {filteredLangs.length === 0 && (
+                                    <div className="px-4 py-4 text-sm text-on-surface-variant/50 text-center">No languages found</div>
+                                )}
+                            </div>
+                        </div>
+                    )}
+                </div>
+            );
+        };
+
+        const TopNavBar = () => {
+            const { t } = useContext(LanguageContext);
+            const [scrolled, setScrolled] = useState(false);
+            useEffect(() => {
+                const handleScroll = () => setScrolled(window.scrollY > 20);
+                window.addEventListener('scroll', handleScroll);
+                return () => window.removeEventListener('scroll', handleScroll);
+            }, []);
+            return (
+                <header>
+                    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'nav-scrolled py-4' : 'bg-transparent py-6'}`}>
+                        <div className="flex justify-between items-center max-w-container-max mx-auto px-gutter h-20">
+                            <div className="flex items-center gap-2 text-on-surface">
+                                <IconCode className="text-secondary w-8 h-8" />
+                                <span className="font-display-xl text-headline-md font-extrabold bg-clip-text text-transparent bg-gradient-to-br from-secondary to-tertiary">D-Site</span>
+                            </div>
+                            <div className="hidden md:flex items-center gap-8 font-body-md">
+                                <a href="#" className="text-primary font-bold border-b-2 border-primary pb-1">{t.nav.benefits}</a>
+                                <a href="#portfolio" className="text-on-surface-variant hover:text-on-surface transition-colors">{t.nav.portfolio}</a>
+                                <a href="#pricing" className="text-on-surface-variant hover:text-on-surface transition-colors">{t.nav.pricing}</a>
+                            </div>
+                            <div className="flex items-center gap-6">
+                                <LanguageSwitcher />
+                                <a href="https://wa.me/79211115005" target="_blank" rel="noopener noreferrer" className="btn-primary px-6 py-2 rounded-full font-label-sm tracking-wider">{t.btnOrder}</a>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            );
+        };
+
+        const Hero = () => {
+            const { t } = useContext(LanguageContext);
+            return (
+                <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
+                    <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-secondary-container/30 rounded-full blur-[150px] animate-blob"></div>
+                    <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-tertiary-container/30 rounded-full blur-[150px] animate-blob animation-delay-2000"></div>
+                    <div className="relative z-10 max-w-4xl mx-auto px-gutter text-center reveal">
+                        <div className="inline-block mb-6 px-4 py-1.5 rounded-full glass-panel border border-white/10 font-label-sm text-secondary-fixed-dim uppercase tracking-widest text-xs">
+                            {t.hero.label}
+                        </div>
+                        {/* Изменено на структурированный H1 для SEO */}
+                        <h1 className="text-display-xl-mobile md:text-display-xl font-bold mb-6 leading-tight text-on-surface">
+                            {t.hero.heading1} <br className="hidden md:block"/>
+                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-tertiary">{t.hero.heading2}</span>
+                        </h1>
+                        <p className="text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">{t.hero.desc}</p>
+                        <a href="https://wa.me/79211115005" target="_blank" rel="noopener noreferrer" className="btn-primary px-10 py-4 rounded-full font-bold text-lg shadow-[0_0_20px_rgba(49,49,192,0.6)] inline-block">
+                            {t.btnOrder}
+                        </a>
+                        
+                        <div className="mt-16 flex flex-col items-center">
+                            <span className="text-secondary-fixed-dim text-sm font-bold uppercase tracking-widest mb-6">{t.social}</span>
+                            <div className="flex gap-8" style={{direction: 'ltr'}}>
+                                <a href="https://www.instagram.com/dsite222/" target="_blank" rel="noopener noreferrer" className="text-on-surface-variant hover:text-secondary transition-colors" aria-label="Instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                                </a>
+                                <a href="https://wa.me/79211115005" target="_blank" rel="noopener noreferrer" className="text-on-surface-variant hover:text-secondary transition-colors" aria-label="WhatsApp">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </a>
+                                <a href="https://t.me/Dsite222" target="_blank" rel="noopener noreferrer" className="text-on-surface-variant hover:text-secondary transition-colors" aria-label="Telegram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
+        const Portfolio = () => {
+            const { t } = useContext(LanguageContext);
+            const portfolioLink = "https://github.com/Dan4ik-ice/my-portfolio-website";
+            return (
+                <section id="portfolio" className="py-20">
+                    <div className="max-w-container-max mx-auto px-gutter">
+                        <div className="text-center mb-16 reveal">
+                            {/* Изменено на H2 */}
+                            <h2 className="text-headline-lg font-bold mb-4 text-on-surface">{t.portfolio.heading}</h2>
+                            <p className="text-on-surface-variant max-w-2xl mx-auto">{t.portfolio.desc}</p>
+                        </div>
+                        <div className="flex justify-center reveal">
+                            <a href={portfolioLink} target="_blank" rel="noopener noreferrer" className="glass-card rounded-2xl overflow-hidden group w-full max-w-2xl">
+                                <div className="aspect-video overflow-hidden relative">
+                                    {/* Добавлен динамический alt для SEO картинок */}
+                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt={t.portfolio.imgAlt} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                        <span className="text-white font-bold text-xl">{t.portfolio.viewGithub}</span>
+                                    </div>
+                                </div>
+                                <div className="p-8">
+                                    <span className="text-secondary text-xs font-bold uppercase tracking-widest block mb-2">{t.portfolio.mainProject}</span>
+                                    {/* Изменено на H3 */}
+                                    <h3 className="text-headline-md font-bold text-on-surface group-hover:text-tertiary transition-colors">{t.portfolio.projectTitle}</h3>
+                                    <p className="text-on-surface-variant mt-2">{t.portfolio.projectDesc}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
+        const Pricing = () => {
+            const { t } = useContext(LanguageContext);
+            return (
+                <section id="pricing" className="py-20 relative overflow-hidden">
+                    <div className="max-w-container-max mx-auto px-gutter relative z-10">
+                        <div className="text-center mb-16 reveal">
+                            {/* Изменено на H2 */}
+                            <h2 className="text-headline-lg font-bold mb-4 text-on-surface">{t.pricing.heading}</h2>
+                            <p className="text-on-surface-variant max-w-2xl mx-auto">{t.pricing.desc}</p>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                            {t.pricing.plans.map((plan, idx) => (
+                                <div key={idx} className="glass-card p-8 rounded-3xl reveal flex flex-col h-full">
+                                    {/* Изменено на H3 */}
+                                    <h3 className="text-2xl font-bold mb-4 text-on-surface">{plan.name}</h3>
+                                    <div className="flex items-baseline gap-2 mb-6">
+                                        <span className="text-4xl font-bold text-secondary">{plan.price} ₽</span>
+                                        <span className="text-lg line-through text-on-surface-variant/50">{plan.oldPrice}</span>
+                                        <span className="text-sm font-bold text-on-surface-variant/40 ml-auto">{plan.discount}</span>
+                                    </div>
+                                    <ul className="space-y-4 mb-10 flex-grow">
+                                        {plan.features.map((f, i) => (
+                                            <li key={i} className="flex items-center gap-3 text-on-surface-variant">
+                                                <IconCheck className="w-5 h-5 text-secondary shrink-0" />
+                                                <span>{f}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <a href="https://wa.me/79211115005" target="_blank" rel="noopener noreferrer" className="btn-primary w-full py-4 rounded-xl font-bold text-center block">{t.pricing.btnChoose}</a>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
+        const Footer = () => {
+            const { t } = useContext(LanguageContext);
+            return (
+                <footer className="glass-panel border-t border-white/10 pt-16 pb-8 mt-20">
+                    <div className="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-6">
+                        <div className="flex items-center gap-2">
+                            <IconCode className="text-secondary w-6 h-6" />
+                            <span className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-secondary to-tertiary">D-Site</span>
+                        </div>
+                        <p className="text-on-surface-variant text-sm">© {new Date().getFullYear()} D-Site. {t.footer}</p>
+                    </div>
+                </footer>
+            );
+        }
+
+        const App = () => {
+            useScrollReveal();
+            return (
+                <LanguageProvider>
+                    <div className="min-h-screen flex flex-col font-body-md bg-background text-on-background">
+                        <TopNavBar />
+                        <main className="flex-grow">
+                            <Hero />
+                            <Portfolio />
+                            <Pricing />
+                        </main>
+                        <Footer />
+                    </div>
+                </LanguageProvider>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
