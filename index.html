@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html class="dark scroll-smooth" lang="ru">
-
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta name="google-site-verification" content="GgqXX1hpXJitC37u-jPldr4PfLBXH-TNwcEvteFbm0Q" />
+    
     <title>D-Site</title>
     <meta id="meta-description" name="description" content="Мы создаем высокопроизводительные, доступные и визуально ошеломляющие веб-приложения и сайты, которые привлекают внимание и масштабируются вместе с вашим бизнесом."/>
-    <meta name="keywords" content="создание сайтов, лендинг, сайт для бизнеса, веб-разработка, заказать сайт, разработка приложений, web development, landing page"/>
+    <meta name="keywords" content="создание сайтов, лендинг, site для бизнеса, веб-разработка, заказать сайт, разработка приложений, web development, landing page"/>
     <meta name="robots" content="index, follow"/>
     
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="D-Site — Создание современных сайтов под ключ"/>
-    <meta property="og:description" content="Высокопроизводительные и визуально ошеломляющие веб-приложения для вашего бизнеса."/>
+    <meta property="og:description" content="High-performance и визуально ошеломляющие веб-приложения для вашего бизнеса."/>
     <meta property="og:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"/>
     
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -222,6 +221,8 @@
                 pricing: {
                     heading: "Тарифы",
                     desc: "Прозрачное ценообразование для ваших задач",
+                    currency: "₽",
+                    currencyBefore: false,
                     plans: [
                         { name: "Лендинг проект", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Одностраничный сайт", "Адаптивный дизайн", "SEO-оптимизация", "Срок 3-5 дней"] },
                         { name: "Сайт для Бизнеса", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Многостраничный сайт", "Индивидуальный дизайн", "Настройка аналитики", "Срок 7-14 дней"] }
@@ -254,9 +255,11 @@
                 pricing: {
                     heading: "Pricing",
                     desc: "Transparent pricing for your tasks",
+                    currency: "$",
+                    currencyBefore: true,
                     plans: [
-                        { name: "Landing Project", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Single-page site", "Responsive design", "SEO optimization", "3-5 days delivery"] },
-                        { name: "Business Site", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Multi-page site", "Custom design", "Analytics setup", "7-14 days delivery"] }
+                        { name: "Landing Project", price: "120", oldPrice: "240", discount: "50%", features: ["Single-page site", "Responsive design", "SEO optimization", "3-5 days delivery"] },
+                        { name: "Business Site", price: "290", oldPrice: "390", discount: "27%", features: ["Multi-page site", "Custom design", "Analytics setup", "7-14 days delivery"] }
                     ],
                     btnChoose: "Choose Plan"
                 },
@@ -286,9 +289,11 @@
                 pricing: {
                     heading: "Precios",
                     desc: "Precios transparentes para tus tareas",
+                    currency: "$",
+                    currencyBefore: true,
                     plans: [
-                        { name: "Proyecto Landing", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Sitio de una página", "Diseño responsivo", "Optimización SEO", "Entrega 3-5 días"] },
-                        { name: "Sitio para Negocios", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Sitio multipágina", "Diseño personalizado", "Configuración de analíticas", "Entrega 7-14 días"] }
+                        { name: "Proyecto Landing", price: "120", oldPrice: "240", discount: "50%", features: ["Sitio de una página", "Diseño responsivo", "Optimización SEO", "Entrega 3-5 días"] },
+                        { name: "Sitio para Negocios", price: "290", oldPrice: "390", discount: "27%", features: ["Sitio multipágina", "Diseño personalizado", "Configuración de analíticas", "Entrega 7-14 días"] }
                     ],
                     btnChoose: "Elegir Plan"
                 },
@@ -302,7 +307,7 @@
                 hero: { label: "Améliorer l'expérience numérique", heading1: "Création de", heading2: "Sites Web", desc: "Nous créons des applications web de haute performance, accessibles et visuellement époustouflantes qui captent l'attention et évoluent avec votre entreprise." },
                 social: "Nos Réseaux Sociaux",
                 portfolio: { heading: "Travaux Sélectionnés", desc: "Une vitrine de nos projets récents. Cliquez sur la carte pour voir le code sur GitHub.", viewGithub: "Voir sur GitHub", mainProject: "Projet Principal", projectTitle: "Mon Site Portfolio", projectDesc: "Tout le code source et la structure de mi portfolio actuel dans un seul dépôt.", imgAlt: "Aperçu du projet" },
-                pricing: { heading: "Tarifs", desc: "Une tarification transparente pour vos besoins", plans: [ { name: "Projet Landing", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Site d'une seule page", "Design adaptatif", "Optimisation SEO", "Livraison 3-5 jours"] }, { name: "Site d'Entreprise", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Site multi-pages", "Design personnalisé", "Configuration analytique", "Livraison 7-14 jours"] } ], btnChoose: "Choisir un forfait" },
+                pricing: { heading: "Tarifs", desc: "Une tarification transparente pour vos besoins", currency: "€", currencyBefore: false, plans: [ { name: "Projet Landing", price: "110", oldPrice: "220", discount: "50%", features: ["Site d'une seule page", "Design adaptatif", "Optimisation SEO", "Livraison 3-5 jours"] }, { name: "Site d'Entreprise", price: "270", oldPrice: "370", discount: "27%", features: ["Site multi-pages", "Design personnalisé", "Configuration analytique", "Livraison 7-14 jours"] } ], btnChoose: "Choisir un forfait" },
                 footer: "Tous droits réservés."
             },
             AR: {
@@ -313,7 +318,7 @@
                 hero: { label: "ارتقاء بالتجارب الرقمية", heading1: "تصميم وتطوير", heading2: "المواقع", desc: "نحن نصمم تطبيقات ويب عالية الأداء، سهلة الاستخدام، ومذهلة بصرياً تجذب الانتباه وتتطور مع نمو أعمالك." },
                 social: "حساباتنا على وسائل التواصل الاجتماعي",
                 portfolio: { heading: "أعمال مختارة", desc: "عرض لمشاريعنا الأخيرة. اضغط على البطاقة لمشاهدة الكود على GitHub.", viewGithub: "عرض على GitHub", mainProject: "المشروع الرئيسي", projectTitle: "موقع معرض أعمالي", projectDesc: "جميع الأكواد البرمجية وهيكل معرض أعمالي الحالي في مستودع واحد.", imgAlt: "معاينة المشروع" },
-                pricing: { heading: "الأسعار", desc: "أسعار شفافة ومناسبة لاحتياجاتك", plans: [ { name: "مشروع صفحة هبوط", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["موقع من صفحة واحدة", "تصميم متجاوب بالكامل", "تحسين محركات البحث SEO", "التسليم خلال 3-5 أيام"] }, { name: "موقع للشركات والأعمال", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["موقع متعدد الصفحات", "تصميم مخصص وفردي", "إعداد تحليلات الموقع", "التسليم خلال 7-14 يوماً"] } ], btnChoose: "اختر الباقة" },
+                pricing: { heading: "الأسعار", desc: "أسعار شفافة ومناسبة لاحتياجاتك", currency: "$", currencyBefore: true, plans: [ { name: "مشروع صفحة هبوط", price: "120", oldPrice: "240", discount: "50%", features: ["موقع من صفحة واحدة", "تصميم متجاوب بالكامل", "تحسين محركات البحث SEO", "التسليم خلال 3-5 أيام"] }, { name: "موقع للشركات والأعمال", price: "290", oldPrice: "390", discount: "27%", features: ["موقع متعدد الصفحات", "تصميم مخصص وفردي", "إعداد تحليلات الموقع", "التسليم خلال 7-14 يوماً"] } ], btnChoose: "اختر الباقة" },
                 footer: "جميع الحقوق محفوظة."
             },
             ZH: {
@@ -324,7 +329,7 @@
                 hero: { label: "助力企业数字化升级", heading1: "高端定制", heading2: "网站建设", desc: "我们打造高性能、无障碍访问且极具视觉震撼力的 Web 应用，吸引目标客户并随您的业务规模完美扩展。" },
                 social: "关注我们",
                 portfolio: { heading: "精选作品集", desc: "我们近期项目的集中展示。点击卡片即可在 GitHub 上查看源码。", viewGithub: "在 GitHub 上查看", mainProject: "核心主推项目", projectTitle: "我的个人作品集网站", projectDesc: "当前作品集的所有源代码和项目结构，均托管在单一仓库中。", imgAlt: "项目预览" },
-                pricing: { heading: "透明资费", desc: "针对您的具体业务需求，提供清晰透明的定价方案", plans: [ { name: "单页着陆页项目", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["单页面精简布局", "全响应式自适应设计", "专业级 SEO 基础优化", "交付周期 3-5 个工作日"] }, { name: "商务企业官网", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["多页面深度定制", "独一无二的视觉设计", "全套数据分析配置", "交付周期 7-14 个工作日"] } ], btnChoose: "选择此方案" },
+                pricing: { heading: "透明资费", desc: "针对您的具体业务需求，提供清晰透明的定价方案", currency: "¥", currencyBefore: true, plans: [ { name: "单页着陆页项目", price: "850", oldPrice: "1 700", discount: "50%", features: ["单页面精简布局", "全响应式自适应设计", "专业级 SEO 基础优化", "交付周期 3-5 个工作日"] }, { name: "商务企业官网", price: "2 000", oldPrice: "2 750", discount: "27%", features: ["多页面深度定制", "独一无二的视觉设计", "全套数据分析配置", "交付周期 7-14 个工作日"] } ], btnChoose: "选择此方案" },
                 footer: "版权所有，保留一切权利。"
             },
             JA: {
@@ -332,10 +337,10 @@
                 seoDesc: "ビジネスの growth に合わせて拡張可能で、高性能かつアクセシブルで美しいWebアプリケーションを開発します。",
                 nav: { benefits: "強み・特徴", portfolio: "制作実績", pricing: "料金プラン" },
                 btnOrder: "Webサイトを注文する",
-                hero: { label: "デジタル体験の価値を高める", heading1: "高品質な", heading2: "Webサイト制作", desc: "私たちは、ビジネスの成長に合わせて拡張可能で、ユーザーの視線を釘付けにする、高性能かつアクセсиブルで美しいWebアプリケーションを開発します。" },
+                hero: { label: "デジタル体験の価値を高める", heading1: "高品質な", heading2: "Webサイト制作", desc: "私たちは、ビジネスの成長に合わせて拡張可能で、ユーザーの視線を釘付けにする、高性能かつアクセシブルで美しいWebアプリケーションを開発します。" },
                 social: "公式SNSアカウント",
-                portfolio: { heading: "厳選された実績", desc: "最近のプロジェクトをご紹介します。カードをクリックするとGitHubでコードをご覧いただけます。", viewGithub: "GitHubで見る", mainProject: "メインプロジェクト", projectTitle: "ポートфоリオウェブサイト", projectDesc: "現在公開中のポートフォリオのすべてのソースコードと構造が1つのリポジトリに集約されています。", imgAlt: "実績プレビュー" },
-                pricing: { heading: "料金プラン", desc: "お客様の課題に合わせた透明性の高い価格設定", plans: [ { name: "ランディングページ制作", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["シングルページ構成", "レスポンシブ対応設計", "内部SEO最適化", "納期：3〜5営業日"] }, { name: "ビジネス向け公式サイト", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["マルチページ構成", "完全オリジナルデザイン", "アクセス解析の初期設定", "納期：7〜14営業日"] } ], btnChoose: "プランを選択する" },
+                portfolio: { heading: "厳選された実績", desc: "最近のプロジェクトをご紹介します。カードをクリックするとGitHubでコードをご覧いただけます。", viewGithub: "GitHubで見る", mainProject: "メインプロジェクト", projectTitle: "ポートフォリオウェブサイト", projectDesc: "現在公開中のポートフォリオのすべてのソースコードと構造が1つのリポジトリに集約されています。", imgAlt: "実績プレビュー" },
+                pricing: { heading: "料金プラン", desc: "お客様の課題に合わせた透明性の高い価格設定", currency: "¥", currencyBefore: true, plans: [ { name: "ランディングページ制作", price: "18 000", oldPrice: "36 000", discount: "50%", features: ["シングルページ構成", "レスポンシブ対応設計", "内部SEO最適化", "納期：3〜5営業日"] }, { name: "ビジネス向け公式サイト", price: "43 000", oldPrice: "59 000", discount: "27%", features: ["マルチページ構成", "完全オリジナルデザイン", "アクセス解析の初期設定", "納期：7〜14営業日"] } ], btnChoose: "プランを選択する" },
                 footer: "All rights reserved. 無断転載を禁じます。"
             },
             KO: {
@@ -346,7 +351,7 @@
                 hero: { label: "디지털 경험의 가치를 높이다", heading1: "맞춤형", heading2: "웹사이트 제작", desc: "우리는 사용자의 시선을 사로잡고 비즈니스 성장에 맞춰 유연하게 확장할 수 있는 고성능의 시각적으로도 아름다운 웹 애플리케이션을 제작합니다." },
                 social: "공식 소셜 미디어",
                 portfolio: { heading: "주요 제작 사례", desc: "최근 진행한 프로젝트입니다. 카드를 클릭하면 GitHub에서 소스 코드를 확인할 수 있습니다.", viewGithub: "GitHub에서 보기", mainProject: "메인 프로젝트", projectTitle: "포트폴리오 웹사이트", projectDesc: "현재 운영 중인 포트폴리오의 모든 소스 코드와 프로젝트 구조가 단일 리포지토리에 포함되어 있습니다.", imgAlt: "프로젝트 미리보기" },
-                pricing: { heading: "가격 정책", desc: "귀하의 비즈니스 목적에 맞춘 투명한 비용 제안", plans: [ { name: "랜딩 페이지 프로젝트", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["단일 페이지 구성", "반응형 웹 디자인", "기본 SEO 최적화", "작업 기간: 3~5일"] }, { name: "비즈니스 기업형 웹사이트", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["다중 페이지 구성", "독창적인 커스텀 디자인", "데이터 분석 툴 연동", "작업 기간: 7~14일"] } ], btnChoose: "요금제 선택" },
+                pricing: { heading: "가격 정책", desc: "귀하의 비즈니스 목적에 맞춘 투명한 비용 제안", currency: "₩", currencyBefore: true, plans: [ { name: "랜딩 페이지 프로젝트", price: "160,000", oldPrice: "320,000", discount: "50%", features: ["단일 페이지 구성", "반응형 웹 디자인", "기본 SEO 최적화", "작업 기간: 3~5일"] }, { name: "비즈니스 기업형 웹사이트", price: "390,000", oldPrice: "530,000", discount: "27%", features: ["다중 페이지 구성", "독창적인 커스텀 디자인", "데이터 분석 툴 연동", "작업 기간: 7~14일"] } ], btnChoose: "요금제 선택" },
                 footer: "모든 권리 보유."
             },
             PT: {
@@ -357,7 +362,7 @@
                 hero: { label: "Elevando Experiências Digitais", heading1: "Criação de", heading2: "Sites Web", desc: "Desenvolvemos aplicações web de alto desempenho, acessíveis e visualmente impressionantes que capturam a atenção e escalam junto com o seu negócio." },
                 social: "Nossas Redes Sociales",
                 portfolio: { heading: "Trabalhos Selecionados", desc: "Uma vitrine dos nossos projetos recentes. Clique no cartão para ver o código no GitHub.", viewGithub: "Ver no GitHub", mainProject: "Projeto Principal", projectTitle: "Meu Site de Portfólio", projectDesc: "Todo o código-fonte e estrutura do meu portfólio atual em um único repositório.", imgAlt: "Visualização do projeto" },
-                pricing: { heading: "Preços", desc: "Preços transparentes para as suas necessidades", plans: [ { name: "Projeto Landing Page", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Site de página única", "Design responsivo", "Otimização para SEO", "Prazo de 3-5 dias"] }, { name: "Site Corporativo", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Site multi-páginas", "Design exclusivo", "Configuração de analíticos", "Prazo de 7-14 dias"] } ], btnChoose: "Escolher Plano" },
+                pricing: { heading: "Preços", desc: "Preços transparentes para as suas necessidades", currency: "$", currencyBefore: true, plans: [ { name: "Projeto Landing Page", price: "120", oldPrice: "240", discount: "50%", features: ["Site de página única", "Design responsivo", "Otimização para SEO", "Prazo de 3-5 dias"] }, { name: "Site Corporativo", price: "290", oldPrice: "390", discount: "27%", features: ["Site multi-páginas", "Design exclusivo", "Configuração de analíticos", "Prazo de 7-14 dias"] } ], btnChoose: "Escolher Plano" },
                 footer: "Todos os direitos reservados."
             },
             TR: {
@@ -368,7 +373,7 @@
                 hero: { label: "Dijital Deneyimleri Yükseltiyoruz", heading1: "Profesyonel", heading2: "Web Tasarım", desc: "İşletmenizle birlikte büyüyen, dikkat çeken, yüksek performanslı, erişilebilir ve görsel açıdan kusursuz web uygulamaları geliştiriyoruz." },
                 social: "Sosyal Medya Hesaplarımız",
                 portfolio: { heading: "Öne Çıkan Çalışmalar", desc: "Son projelerimizden bazıları. Kodları GitHub'da incelemek için karta tıklayın.", viewGithub: "GitHub'da Görüntüle", mainProject: "Ana Proje", projectTitle: "Portfolyo Web Sitem", projectDesc: "Mevcut portfolyomun tüm kaynak kodları ve yapısı tek bir depoda yer almaktadır.", imgAlt: "Proje önizlemesi" },
-                pricing: { heading: "Fiyatlandırma", desc: "Hedefleriniz için şeffaf fiyatlandırma politikası", plans: [ { name: "Landing Page Projesi", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Tek sayfa web sitesi", "Mobil uyumlu tasarım", "SEO optimizasyonu", "3-5 gün teslim süresi"] }, { name: "Kurumsal İş Sitesi", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Çok sayfalı web sitesi", "Özel tasarım", "Analitik araçları kurulumu", "7-14 gün teslim süresi"] } ], btnChoose: "Planı Seç" },
+                pricing: { heading: "Fiyatlandırma", desc: "Hedefleriniz için şeffaf fiyatlandırma politikası", currency: "$", currencyBefore: true, plans: [ { name: "Landing Page Projesi", price: "120", oldPrice: "240", discount: "50%", features: ["Tek sayfa web sitesi", "Mobil uyumlu tasarım", "SEO optimizasyonu", "3-5 gün teslim süresi"] }, { name: "Kurumsal İş Sitesi", price: "290", oldPrice: "390", discount: "27%", features: ["Çok sayfalı web sitesi", "Özel tasarım", "Analitik araçları kurulumu", "7-14 gün teslim süresi"] } ], btnChoose: "Planı Seç" },
                 footer: "Tüm hakları saklıdır."
             },
             IT: {
@@ -378,8 +383,8 @@
                 btnOrder: "Ordina un Sito",
                 hero: { label: "Eleviamo le Esperienze Digitali", heading1: "Creazione di", heading2: "Siti Web", desc: "Creiamo applicazioni web ad alte prestazioni, accessibili e visivamente straordinarie che catturano l'attenzione e crescono con la tua attività." },
                 social: "I Nostri Canali Social",
-                portfolio: { heading: "Lavori Selezionati", desc: "Una vetrina dei nostri progetti recenti. Clicca sulla scheda per vedere il codice su GitHub.", viewGithub: "Vedi su GitHub", mainProject: "Progetto Principale", projectTitle: "Il Mio Sito Portfolio", projectDesc: "Tutto il codice sorgente e la struttura del mio portfolio attuale in un unico repository.", imgAlt: "Anteprima progetto" },
-                pricing: { heading: "Prezzi", desc: "Prezzi trasparenti per i tuoi obiettivi", plans: [ { name: "Progetto Landing Page", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Sito a pagina singola", "Design responsive", "Ottimizzazione SEO", "Consegna in 3-5 giorni"] }, { name: "Sito per il Business", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Sito multi-pagina", "Design personalizzato", "Configurazione analytics", "Consegna in 7-14 giorni"] } ], btnChoose: "Scegli il Piano" },
+                portfolio: { heading: "Lavori Selezionati", desc: "Una vetrina dei nostri progetti recenti. Clicca sulla scheda per vedere il codice su GitHub.", viewGithub: "Vedi su GitHub", mainProject: "Progetto Principale", projectTitle: "Il Mio Sito Portfolio", projectDesc: "Tutto il codice sorgente e la struttura del mio portfolio acquittal in un unico repository.", imgAlt: "Anteprima progetto" },
+                pricing: { heading: "Prezzi", desc: "Prezzi trasparenti per i tuoi obiettivi", currency: "€", currencyBefore: false, plans: [ { name: "Progetto Landing Page", price: "110", oldPrice: "220", discount: "50%", features: ["Sito a pagina singola", "Design responsive", "Ottimizzazione SEO", "Consegna in 3-5 giorni"] }, { name: "Sito per il Business", price: "270", oldPrice: "370", discount: "27%", features: ["Sito multi-pagina", "Design personalizzato", "Configurazione analytics", "Consegna in 7-14 giorni"] } ], btnChoose: "Scegli il Piano" },
                 footer: "Tutti i diritti riservati."
             },
             HI: {
@@ -389,8 +394,8 @@
                 btnOrder: "वेबसाइट का आर्डर दें",
                 hero: { label: "डिजिटल अनुभवों को बेहतर बनाना", heading1: "वेबसाइट", heading2: "निर्माण", desc: "हम उच्च प्रदर्शन वाली, सुलभ और दिखने में शानदार वेब एप्लिकेशन बनाते हैं जो ध्यान आकर्षित करती हैं और आपके व्यवसाय के साथ बढ़ती हैं।" },
                 social: "हमारे सोशल मीडिया",
-                portfolio: { heading: "चुनिंदा कार्य", desc: "हमारे हालिया प्रोजेक्ट्स की झलक। गिटहब पर कोड देखने के लिए कार्ड पर क्लिक करें।", viewGithub: "GitHub पर देखें", mainProject: "मुख्य प्रोजेक्ट", projectTitle: "मेरी पोर्टफोलियो वेबसाइट", projectDesc: "मेरे वर्तमान पोर्टफोलियो का पूरा सोर्स कोड और स्ट्रक्चर एक ही रिपोजिटरी में उपलब्ध है।", imgAlt: "परियोजना पूर्वावलोकन" },
-                pricing: { heading: "कीमतें", desc: "आपके कार्यों के लिए पारदर्शी मूल्य निर्धारण", plans: [ { name: "लैंडिंग पेज प्रोजेक्ट", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["एक पेज की वेबसाइट", "उत्तरदायी डिजाइन (Responsive)", "SEO अनुकूलन", "3-5 दिनों का समय"] }, { name: "व्यापार के लिए वेबसाइट", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["बहु-पृष्ठ वेबसाइट", "कस्टम डिजाइन", "एनालिटिक्स सेटअप", "7-14 दिनों का समय"] } ], btnChoose: "प्लान चुनें" },
+                portfolio: { heading: "चुनिंदा कार्य", desc: "हमारे हालिया प्रोजेक्ट्स की झलक। गिटहब पर код देखने के लिए कार्ड पर क्लिक करें।", viewGithub: "GitHub पर देखें", mainProject: "मुख्य प्रोजेक्ट", projectTitle: "मेरी पोर्टफोलियो वेबसाइट", projectDesc: "मेरे वर्तमान पोर्टफोलियो का पूरा सोर्स कोड और स्ट्रक्चर एक ही रिपोजिटरी में उपलब्ध है।", imgAlt: "परियोजना पूर्वावलोकन" },
+                pricing: { heading: "कीमतें", desc: "आपके कार्यों के लिए पारदर्शी मूल्य निर्धारण", currency: "₹", currencyBefore: true, plans: [ { name: "लैंडिंग पेज प्रोजेक्ट", price: "9,990", oldPrice: "19,990", discount: "50%", features: ["एक पेज की वेबसाइट", "उत्तरदायी डिजाइन (Responsive)", "SEO अनुकूलन", "3-5 दिनों का समय"] }, { name: "व्यापार के लिए वेबसाइट", price: "24,990", oldPrice: "34,990", discount: "27%", features: ["बहु-पृष्ठ वेबसाइट", "कस्टम डिजाइन", "एनालिटिक्स सेटअप", "7-14 दिनों का समय"] } ], btnChoose: "प्лан चुनें" },
                 footer: "सर्वाधिकार सुरक्षित।"
             },
             NL: {
@@ -401,7 +406,7 @@
                 hero: { label: "Digitale Ervaringen Verbeteren", heading1: "Bouwen van", heading2: "Websites", desc: "Wij bouwen hoogwaardige, toegankelijke en visueel verbluffende webapplicaties die de aandacht trekken en meeschalen met uw bedrijf." },
                 social: "Onze Sociale Media",
                 portfolio: { heading: "Geselecteerd Werk", desc: "Een overzicht van onze recente projecten. Klik op de kaart om de code op GitHub te bekijken.", viewGithub: "Bekijk op GitHub", mainProject: "Hoofdproject", projectTitle: "Mijn Portfolio Website", projectDesc: "Alle broncode en de structuur van mijn huidige portfolio in één repository.", imgAlt: "Project voorbeeld" },
-                pricing: { heading: "Tarieven", desc: "Transparante prijzen voor uw behoeften", plans: [ { name: "Landing Page Project", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Single-page website", "Responsive design", "SEO optimalisatie", "3-5 dagen levertijd"] }, { name: "Zakelijke Website", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Multi-page website", "Uniek ontwerp", "Inrichting analytics", "7-14 dagen levertijd"] } ], btnChoose: "Kies Plan" },
+                pricing: { heading: "Tarieven", desc: "Transparante prijzen voor uw behoeften", currency: "€", currencyBefore: false, plans: [ { name: "Landing Page Project", price: "110", oldPrice: "220", discount: "50%", features: ["Single-page website", "Responsive design", "SEO optimalisatie", "3-5 dagen levertijd"] }, { name: "Zakelijke Website", price: "270", oldPrice: "370", discount: "27%", features: ["Multi-page website", "Uniek ontwerp", "Inrichting analytics", "7-14 dagen levertijd"] } ], btnChoose: "Kies Plan" },
                 footer: "Alle rechten voorbehouden."
             },
             PL: {
@@ -411,8 +416,8 @@
                 btnOrder: "Zamów Stronę",
                 hero: { label: "Podnoszenie Jakości Doświadczeń Cyfrowych", heading1: "Tworzenie", heading2: "Stron WWW", desc: "Tworzymy wydajne, dostępne i zachwycające wizualnie aplikacje internetowe, które przyciągają uwagę i rozwijają się wraz z Twoim biznesem." },
                 social: "Nasze Media Społecznościowe",
-                portfolio: { heading: "Wybrane Projekty", desc: "Prezentacja naszych ostatnich prac. Kliknij kartę, aby zobaczyć kod na GitHubie.", viewGithub: "Zobacz na GitHubie", mainProject: "Główny Projekt", projectTitle: "Moja Strona Portfolio", projectDesc: "Cały kod źródłowy i struktura mojego aktualного portfolio w jednym repozytorium.", imgAlt: "Podgląd projektu" },
-                pricing: { heading: "Cennik", desc: "Przejrzyste ceny dopasowane do Twoich potrzeb", plans: [ { name: "Projekt Landing Page", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Strona jednostronicowa", "Responsywny design", "Optymalizacja SEO", "Czas realizacji 3-5 dni"] }, { name: "Strona dla Biznesu", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Strona wielostronicowa", "Indywidualny projekt", "Konfiguracja analityki", "Czas realizacji 7-14 dni"] } ], btnChoose: "Wybierz Plan" },
+                portfolio: { heading: "Wybrane Projekty", desc: "Prezentacja naszych ostatnich prac. Kliknij kartę, aby zobaczyć kod na GitHubie.", viewGithub: "Zobacz na GitHubie", mainProject: "Główny Projekt", projectTitle: "Moja Strona Portfolio", projectDesc: "Cały kod źródłowy i struktura mojego aktualnego portfolio w jednym repozytorium.", imgAlt: "Podgląd projektu" },
+                pricing: { heading: "Cennik", desc: "Przejrzyste ceny dopasowane do Twoich potrzeb", currency: "zł", currencyBefore: false, plans: [ { name: "Projekt Landing Page", price: "490", oldPrice: "980", discount: "50%", features: ["Strona jednostronicowa", "Responsywny design", "Optymalizacja SEO", "Czas realizacji 3-5 dni"] }, { name: "Strona dla Biznesu", price: "1 190", oldPrice: "1 640", discount: "27%", features: ["Strona wielostronicowa", "Indywidualny projekt", "Konfiguracja analityki", "Czas realizacji 7-14 dni"] } ], btnChoose: "Wybierz Plan" },
                 footer: "Wszelkie prawa zastrzeżone."
             },
             SV: {
@@ -423,7 +428,7 @@
                 hero: { label: "Höjer Digitala Upplevelser", heading1: "Skapande av", heading2: "Hemsidor", desc: "Vi bygger högpresterande, tillgängliga och visuellt slående webbapplikationer som fångar uppmärksamhet och skalar med din verksamhet." },
                 social: "Våra Socialer Medier",
                 portfolio: { heading: "Utvalda Projekt", desc: "En presentation av våra senaste projekt. Klicka på kortet för att se koden på GitHub.", viewGithub: "Visa på GitHub", mainProject: "Huvudprojekt", projectTitle: "Min Portfoliowebbplats", projectDesc: "All källkod och struktur för min nuvarande portfolio i ett och samma lagringsutrymme.", imgAlt: "Projekt förhandsvisning" },
-                pricing: { heading: "Prissättning", desc: "Transparenta priser för dina behov", plans: [ { name: "Landningssida", price: "7 990", oldPrice: "15 990", discount: "50%", features: ["Ensidig webbplats", "Responsiv design", "SEO-optimering", "Leverans 3-5 dagar"] }, { name: "Företagshemsida", price: "18 990", oldPrice: "25 990", discount: "27%", features: ["Flersidig webbplats", "Anpassad design", "Konfiguration av analysverktyg", "Leverans 7-14 dagar"] } ], btnChoose: "Välj Plan" },
+                pricing: { heading: "Prissättning", desc: "Transparenta priser för dina behov", currency: "kr", currencyBefore: false, plans: [ { name: "Landningssida", price: "1 250", oldPrice: "2 500", discount: "50%", features: ["Ensidig webbplats", "Responsiv design", "SEO-optimering", "Leverans 3-5 dagar"] }, { name: "Företagshemsida", price: "2 950", oldPrice: "3 950", discount: "27%", features: ["Flersidig webbplats", "Anpassad design", "Konfiguration av analysverktyg", "Leverans 7-14 dagar"] } ], btnChoose: "Välj Plan" },
                 footer: "Alla rättigheter förbehållna."
             }
         };
@@ -580,7 +585,6 @@
                         <div className="inline-block mb-6 px-4 py-1.5 rounded-full glass-panel border border-white/10 font-label-sm text-secondary-fixed-dim uppercase tracking-widest text-xs">
                             {t.hero.label}
                         </div>
-                        {/* Изменено на структурированный H1 для SEO */}
                         <h1 className="text-display-xl-mobile md:text-display-xl font-bold mb-6 leading-tight text-on-surface">
                             {t.hero.heading1} <br className="hidden md:block"/>
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-tertiary">{t.hero.heading2}</span>
@@ -616,14 +620,12 @@
                 <section id="portfolio" className="py-20">
                     <div className="max-w-container-max mx-auto px-gutter">
                         <div className="text-center mb-16 reveal">
-                            {/* Изменено на H2 */}
                             <h2 className="text-headline-lg font-bold mb-4 text-on-surface">{t.portfolio.heading}</h2>
                             <p className="text-on-surface-variant max-w-2xl mx-auto">{t.portfolio.desc}</p>
                         </div>
                         <div className="flex justify-center reveal">
                             <a href={portfolioLink} target="_blank" rel="noopener noreferrer" className="glass-card rounded-2xl overflow-hidden group w-full max-w-2xl">
                                 <div className="aspect-video overflow-hidden relative">
-                                    {/* Добавлен динамический alt для SEO картинок */}
                                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt={t.portfolio.imgAlt} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                                         <span className="text-white font-bold text-xl">{t.portfolio.viewGithub}</span>
@@ -631,7 +633,6 @@
                                 </div>
                                 <div className="p-8">
                                     <span className="text-secondary text-xs font-bold uppercase tracking-widest block mb-2">{t.portfolio.mainProject}</span>
-                                    {/* Изменено на H3 */}
                                     <h3 className="text-headline-md font-bold text-on-surface group-hover:text-tertiary transition-colors">{t.portfolio.projectTitle}</h3>
                                     <p className="text-on-surface-variant mt-2">{t.portfolio.projectDesc}</p>
                                 </div>
@@ -644,22 +645,29 @@
 
         const Pricing = () => {
             const { t } = useContext(LanguageContext);
+            const isCurrencyBefore = t.pricing.currencyBefore;
             return (
                 <section id="pricing" className="py-20 relative overflow-hidden">
                     <div className="max-w-container-max mx-auto px-gutter relative z-10">
                         <div className="text-center mb-16 reveal">
-                            {/* Изменено на H2 */}
                             <h2 className="text-headline-lg font-bold mb-4 text-on-surface">{t.pricing.heading}</h2>
                             <p className="text-on-surface-variant max-w-2xl mx-auto">{t.pricing.desc}</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                             {t.pricing.plans.map((plan, idx) => (
                                 <div key={idx} className="glass-card p-8 rounded-3xl reveal flex flex-col h-full">
-                                    {/* Изменено на H3 */}
                                     <h3 className="text-2xl font-bold mb-4 text-on-surface">{plan.name}</h3>
                                     <div className="flex items-baseline gap-2 mb-6">
-                                        <span className="text-4xl font-bold text-secondary">{plan.price} ₽</span>
-                                        <span className="text-lg line-through text-on-surface-variant/50">{plan.oldPrice}</span>
+                                        <span className="text-4xl font-bold text-secondary">
+                                            {isCurrencyBefore && <span className="text-2xl mr-1">{t.pricing.currency}</span>}
+                                            {plan.price}
+                                            {!isCurrencyBefore && <span className="text-2xl ml-1">{t.pricing.currency}</span>}
+                                        </span>
+                                        <span className="text-lg line-through text-on-surface-variant/50">
+                                            {isCurrencyBefore && t.pricing.currency}
+                                            {plan.oldPrice}
+                                            {!isCurrencyBefore && ' ' + t.pricing.currency}
+                                        </span>
                                         <span className="text-sm font-bold text-on-surface-variant/40 ml-auto">{plan.discount}</span>
                                     </div>
                                     <ul className="space-y-4 mb-10 flex-grow">
