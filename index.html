@@ -1,687 +1,1157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="dark scroll-smooth" lang="ru">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="google-site-verification" content="2-a3YmSNXVvstOS6M37nTUYtGxCZvZoYRd-rNnhDBU8" />
-    <link rel="icon" type="image/png" href="Gemini_Generated_Image_vdcjklvdcjklvdcj.png">
-    <!-- SEO Оптимизация под запросы sytekuznica и Создание сайтов -->
-    <title>sytekuznica — Создание сайтов под ключ | Профессиональная веб-разработка</title>
-    <meta id="meta-description" name="description" content="sytekuznica — профессиональное создание сайтов любой сложности. Высокопроизводительные веб-приложения, лендинги и сайты для бизнеса. Заказать создание сайтов от sytekuznica."/>
-    <meta name="keywords" content="sytekuznica, создание сайтов, заказать сайт, сайт под ключ, веб-разработка, лендинг, сайт для бизнеса, разработка сайтов sytekuznica, dsite"/>
-    <meta name="robots" content="index, follow"/>
+    <link rel="icon" type="image/png" href="Gemini_Generated_Image_vdcjklvdcjklvdcj.png" />
 
-    <!-- Подтверждение прав Google Search Console и Яндекс.Вебмастер -->
-    <meta name="google-site-verification" content="код_подтверждения_из_гугла" />
-    <meta name="yandex-verification" content="код_подтверждения_из_яндекса" />
-    
-    <!-- Open Graph метатеги для соцсетей -->
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="sytekuznica — Создание сайтов под ключ"/>
-    <meta property="og:description" content="Высокопроизводительные, адаптивные и современные сайты для вашего бизнеса от веб-студии sytekuznica."/>
-    <meta property="og:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"/>
-    
+    <title>СайтКузница (sytekuznica) — Создание сайтов под ключ | Профессиональная веб-разработка</title>
+    <meta
+      id="meta-description"
+      name="description"
+      content="СайтКузница (sytekuznica) — профессиональное создание сайтов любой сложности. Высокопроизводительные веб-приложения, лендинги и сайты для бизнеса. Заказать создание сайтов от студии СайтКузница."
+    />
+    <meta
+      name="keywords"
+      content="СайтКузница, Сайт Кузница, сайткузница, sytekuznica, создание сайтов, заказать сайт, сайт под ключ, веб-разработка, лендинг, сайт для бизнеса, dsite"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="СайтКузница (sytekuznica) — Создание сайтов под ключ" />
+    <meta
+      property="og:description"
+      content="Высокопроизводительные, адаптивные и современные сайты для вашего бизнеса от веб-студии СайтКузница (sytekuznica)."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+    />
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet"/>
-    
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap"
+      rel="stylesheet"
+    />
+
     <script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "on-primary": "#303036",
-                      "surface-container-low": "#1c1b1c",
-                      "error": "#ffb4ab",
-                      "secondary-fixed-dim": "#c0c1ff",
-                      "primary": "#c8c5cd",
-                      "on-primary-container": "#7a797f",
-                      "inverse-surface": "#e5e1e2",
-                      "surface-container-highest": "#353435",
-                      "surface-container-lowest": "#0e0e0e",
-                      "on-primary-fixed-variant": "#47464c",
-                      "tertiary": "#ddb7ff",
-                      "tertiary-fixed-dim": "#ddb7ff",
-                      "surface-variant": "#353435",
-                      "surface-tint": "#c8c5cd",
-                      "on-background": "#e5e1e2",
-                      "on-tertiary-fixed": "#2c0051",
-                      "on-surface": "#e5e1e2",
-                      "primary-fixed": "#e4e1e9",
-                      "on-error-container": "#ffdad6",
-                      "on-error": "#690005",
-                      "on-surface-variant": "#c8c5cb",
-                      "outline": "#929095",
-                      "surface": "#141314",
-                      "secondary": "#c0c1ff",
-                      "on-tertiary": "#490080",
-                      "surface-bright": "#3a3939",
-                      "inverse-primary": "#5f5d64",
-                      "surface-dim": "#141314",
-                      "on-primary-fixed": "#1b1b20",
-                      "on-tertiary-container": "#a14ef0",
-                      "on-secondary-fixed-variant": "#2f2ebe",
-                      "on-tertiary-fixed-variant": "#6900b3",
-                      "background": "#141314",
-                      "secondary-container": "#3131c0",
-                      "tertiary-container": "#14002a",
-                      "on-secondary-container": "#b0b2ff",
-                      "outline-variant": "#47464b",
-                      "primary-fixed-dim": "#c8c5cd",
-                      "primary-container": "#0a0a0f",
-                      "inverse-on-surface": "#313030",
-                      "error-container": "#93000a",
-                      "tertiary-fixed": "#f0dbff",
-                      "surface-container": "#201f20",
-                      "secondary-fixed": "#e1e0ff",
-                      "on-secondary-fixed": "#07006c",
-                      "on-secondary": "#1000a9",
-                      "surface-container-high": "#2b2a2a"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.25rem",
-                      "lg": "0.5rem",
-                      "xl": "0.75rem",
-                      "full": "9999px"
-              },
-              "spacing": {
-                      "unit": "8px",
-                      "gutter": "32px",
-                      "section-padding-desktop": "160px",
-                      "section-padding-mobile": "80px",
-                      "container-max": "1280px"
-              },
-              "fontFamily": {
-                      "display-xl-mobile": ["Geist"],
-                      "headline-lg": ["Geist"],
-                      "headline-md": ["Geist"],
-                      "body-lg": ["Inter"],
-                      "display-xl": ["Geist"],
-                      "label-sm": ["JetBrains Mono"],
-                      "body-md": ["Inter"]
-              },
-              "fontSize": {
-                      "display-xl-mobile": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-                      "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                      "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
-                      "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                      "display-xl": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "800" }],
-                      "label-sm": ["14px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "500" }],
-                      "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
-              }
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary": "#303036",
+              "surface-container-low": "#1c1b1c",
+              error: "#ffb4ab",
+              "secondary-fixed-dim": "#c0c1ff",
+              primary: "#c8c5cd",
+              "on-primary-container": "#7a797f",
+              "inverse-surface": "#e5e1e2",
+              "surface-container-highest": "#353435",
+              "surface-container-lowest": "#0e0e0e",
+              "on-primary-fixed-variant": "#47464c",
+              tertiary: "#ddb7ff",
+              "tertiary-fixed-dim": "#ddb7ff",
+              "surface-variant": "#353435",
+              "surface-tint": "#c8c5cd",
+              "on-background": "#e5e1e2",
+              "on-tertiary-fixed": "#2c0051",
+              "on-surface": "#e5e1e2",
+              "primary-fixed": "#e4e1e9",
+              "on-error-container": "#ffdad6",
+              "on-error": "#690005",
+              "on-surface-variant": "#c8c5cb",
+              outline: "#929095",
+              surface: "#141314",
+              secondary: "#c0c1ff",
+              "on-tertiary": "#490080",
+              "surface-bright": "#3a3939",
+              "inverse-primary": "#5f5d64",
+              "surface-dim": "#141314",
+              "on-primary-fixed": "#1b1b20",
+              "on-tertiary-container": "#a14ef0",
+              "on-secondary-fixed-variant": "#2f2ebe",
+              "on-tertiary-fixed-variant": "#6900b3",
+              background: "#141314",
+              "secondary-container": "#3131c0",
+              "tertiary-container": "#14002a",
+              "on-secondary-container": "#b0b2ff",
+              "outline-variant": "#47464b",
+              "primary-fixed-dim": "#c8c5cd",
+              "primary-container": "#0a0a0f",
+              "inverse-on-surface": "#313030",
+              "error-container": "#93000a",
+              "tertiary-fixed": "#f0dbff",
+              "surface-container": "#201f20",
+              "secondary-fixed": "#e1e0ff",
+              "on-secondary-fixed": "#07006c",
+              "on-secondary": "#1000a9",
+              "surface-container-high": "#2b2a2a",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              unit: "8px",
+              gutter: "32px",
+              "section-padding-desktop": "160px",
+              "section-padding-mobile": "80px",
+              "container-max": "1280px",
+            },
+            fontFamily: {
+              "display-xl-mobile": ["Geist"],
+              "headline-lg": ["Geist"],
+              "headline-md": ["Geist"],
+              "body-lg": ["Inter"],
+              "display-xl": ["Geist"],
+              "label-sm": ["JetBrains Mono"],
+              "body-md": ["Inter"],
+            },
+            fontSize: {
+              "display-xl-mobile": ["40px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "800" }],
+              "headline-lg": ["48px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }],
+              "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "600" }],
+              "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+              "display-xl": ["72px", { lineHeight: "1.1", letterSpacing: "-0.04em", fontWeight: "800" }],
+              "label-sm": ["14px", { lineHeight: "1.0", letterSpacing: "0.05em", fontWeight: "500" }],
+              "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
             },
           },
-        }
-      </script>
+        },
+      };
+    </script>
     <style>
-        @keyframes blob {
-            0% { transform: translate(0px, 0px) scale(1); }
-            33% { transform: translate(30px, -50px) scale(1.1); }
-            66% { transform: translate(-20px, 20px) scale(0.9); }
-            100% { transform: translate(0px, 0px) scale(1); }
+      @keyframes blob {
+        0% {
+          transform: translate(0px, 0px) scale(1);
         }
-        .animate-blob { animation: blob 7s infinite; }
-        .animation-delay-2000 { animation-delay: 2s; }
-        .animation-delay-4000 { animation-delay: 4s; }
-        .glass-panel {
-            background: rgba(20, 19, 20, 0.4);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+        33% {
+          transform: translate(30px, -50px) scale(1.1);
         }
-        .glass-card {
-            background: rgba(43, 42, 42, 0.2);
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        66% {
+          transform: translate(-20px, 20px) scale(0.9);
         }
-        .glass-card:hover {
-            transform: translateY(-5px) scale(1.02);
-            border-color: rgba(255, 255, 255, 0.2);
-            background: rgba(43, 42, 42, 0.3);
+        100% {
+          transform: translate(0px, 0px) scale(1);
         }
-        .btn-primary {
-            background: linear-gradient(to right, theme('colors.secondary-container'), theme('colors.tertiary-container'));
-            color: #ffffff;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        .btn-primary:hover {
-            box-shadow: 0 0 25px 8px rgba(49, 49, 192, 0.5);
-            transform: translateY(-2px);
-        }
-        .reveal {
-            opacity: 0;
-            transform: translateY(40px) scale(0.95);
-            transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
-        .reveal.active { opacity: 1; transform: translateY(0) scale(1); }
-        .nav-scrolled {
-            background: rgba(20, 19, 20, 0.7);
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-        }
-        body {
-            background-color: theme('colors.background');
-            color: theme('colors.on-background');
-            overflow-x: hidden;
-        }
-        .noise-overlay {
-            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-            pointer-events: none; z-index: 9999; opacity: 0.03;
-            background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E');
-        }
-        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
-        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
-        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); border-radius: 4px; }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.3); }
+      }
+      .animate-blob {
+        animation: blob 7s infinite;
+      }
+      .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+      .animation-delay-4000 {
+        animation-delay: 4s;
+      }
+      .glass-panel {
+        background: rgba(20, 19, 20, 0.4);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .glass-card {
+        background: rgba(43, 42, 42, 0.2);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+      }
+      .glass-card:hover {
+        transform: translateY(-5px) scale(1.02);
+        border-color: rgba(255, 255, 255, 0.2);
+        background: rgba(43, 42, 42, 0.3);
+      }
+      .btn-primary {
+        background: linear-gradient(to right, theme("colors.secondary-container"), theme("colors.tertiary-container"));
+        color: #ffffff;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .btn-primary:hover {
+        box-shadow: 0 0 25px 8px rgba(49, 49, 192, 0.5);
+        transform: translateY(-2px);
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+        transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+      .nav-scrolled {
+        background: rgba(20, 19, 20, 0.7);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+      body {
+        background-color: theme("colors.background");
+        color: theme("colors.on-background");
+        overflow-x: hidden;
+      }
+      .noise-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0.03;
+        background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E');
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
     </style>
-</head>
-<body class="min-h-screen flex flex-col font-body-md bg-background text-on-background">
+  </head>
+  <body class="min-h-screen flex flex-col font-body-md bg-background text-on-background">
     <div class="noise-overlay"></div>
 
-    <!-- HEADER / NAVIGATION -->
     <header>
-        <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent py-6">
-            <div class="flex justify-between items-center max-w-container-max mx-auto px-gutter h-20">
-                <div class="flex items-center gap-2 text-on-surface">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="text-secondary w-8 h-8"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                    <span class="font-display-xl text-headline-md font-extrabold bg-clip-text text-transparent bg-gradient-to-br from-secondary to-tertiary">sytekuznica</span>
-                </div>
-                <div class="hidden md:flex items-center gap-8 font-body-md">
-                    <a href="#" id="nav-benefits" class="text-primary font-bold border-b-2 border-primary pb-1">Преимущества</a>
-                    <a href="#portfolio" id="nav-portfolio" class="text-on-surface-variant hover:text-on-surface transition-colors">Портфолио</a>
-                    <a href="#pricing" id="nav-pricing" class="text-on-surface-variant hover:text-on-surface transition-colors">Цены</a>
-                </div>
-                <!-- Блок элементов справа: смещение вправо на мобильных экранах -->
-                <div class="flex items-center gap-4 md:gap-6 ml-auto md:ml-0">
-                    <!-- Переключатель Языков -->
-                    <div class="relative">
-                        <button id="lang-btn" class="flex items-center gap-1 text-on-surface hover:text-secondary transition-colors focus:outline-none py-2">
-                            <span class="font-label-sm" id="current-lang">RU</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" id="lang-arrow" class="transition-transform duration-200"><path d="m6 9 6 6 6-6"/></svg>
-                        </button>
-                        <div id="lang-dropdown" class="hidden absolute right-0 mt-2 w-32 max-h-60 overflow-y-auto custom-scrollbar glass-panel rounded-lg shadow-xl overflow-hidden z-50 border border-white/10 flex flex-col">
-                            <!-- Сюда динамически генерируются все 15 языков -->
-                        </div>
-                    </div>
-                    <a href="https://t.me/Sytekuznica" target="_blank" rel="noopener noreferrer" class="btn-order-tg btn-primary px-4 md:px-6 py-2 rounded-full font-label-sm tracking-wider text-sm md:text-base">Заказать сайт</a>
-                </div>
+      <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent py-6">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-gutter h-20">
+          <div class="flex items-center gap-2 text-on-surface">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-secondary w-8 h-8"
+            >
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span
+              class="font-display-xl text-headline-md font-extrabold bg-clip-text text-transparent bg-gradient-to-br from-secondary to-tertiary"
+              >sytekuznica</span
+            >
+          </div>
+          <div class="hidden md:flex items-center gap-8 font-body-md">
+            <a href="#" id="nav-benefits" class="text-primary font-bold border-b-2 border-primary pb-1">Преимущества</a>
+            <a
+              href="#portfolio"
+              id="nav-portfolio"
+              class="text-on-surface-variant hover:text-on-surface transition-colors"
+              >Портфолио</a
+            >
+            <a href="#pricing" id="nav-pricing" class="text-on-surface-variant hover:text-on-surface transition-colors"
+              >Цены</a
+            >
+          </div>
+          <div class="flex items-center gap-4 md:gap-6 ml-auto md:ml-0">
+            <div class="relative">
+              <button
+                id="lang-btn"
+                class="flex items-center gap-1 text-on-surface hover:text-secondary transition-colors focus:outline-none py-2"
+              >
+                <span class="font-label-sm" id="current-lang">RU</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  id="lang-arrow"
+                  class="transition-transform duration-200"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+              <div
+                id="lang-dropdown"
+                class="hidden absolute right-0 mt-2 w-32 max-h-60 overflow-y-auto custom-scrollbar glass-panel rounded-lg shadow-xl overflow-hidden z-50 border border-white/10 flex flex-col"
+              ></div>
             </div>
-        </nav>
+            <a
+              href="https://t.me/Sytekuznica"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-order-tg btn-primary px-4 md:px-6 py-2 rounded-full font-label-sm tracking-wider text-sm md:text-base"
+              >Заказать сайт</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main class="flex-grow">
-        <!-- HERO SECTION -->
-        <section class="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
-            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-secondary-container/30 rounded-full blur-[150px] animate-blob"></div>
-            <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-tertiary-container/30 rounded-full blur-[150px] animate-blob animation-delay-2000"></div>
-            <div class="relative z-10 max-w-4xl mx-auto px-gutter text-center reveal">
-                <div id="hero-label" class="inline-block mb-6 px-4 py-1.5 rounded-full glass-panel border border-white/10 font-label-sm text-secondary-fixed-dim uppercase tracking-widest text-xs">
-                    Профессиональное продвижение компаний
-                </div>
-                <h1 class="text-display-xl-mobile md:text-display-xl font-bold mb-6 leading-tight text-on-surface">
-                    <span id="hero-h1">Создание сайтов</span> <br class="hidden md:block"/>
-                    <span id="hero-h2" class="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-tertiary">под ключ в sytekuznica</span>
-                </h1>
-                <p id="hero-desc" class="text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">Мы создаем высокопроизводительные, доступные и визуально ошеломляющие веб-приложения и лендинги, которые привлекают внимание клиентов и эффективно масштабируют ваш бизнес.</p>
-                <a href="https://t.me/Sytekuznica" target="_blank" rel="noopener noreferrer" class="btn-order-tg btn-primary px-10 py-4 rounded-full font-bold text-lg shadow-[0_0_20px_rgba(49,49,192,0.6)] inline-block">
-                    Заказать сайт
-                </a>
-                
-                <div class="mt-16 flex flex-col items-center">
-                    <span id="social-title" class="text-secondary-fixed-dim text-sm font-bold uppercase tracking-widest mb-6">Наши social-сети</span>
-                    <div class="flex gap-8" style="direction: ltr;">
-                        <a href="https://www.instagram.com/dsite222/" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant hover:text-secondary transition-colors" aria-label="Instagram">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-                        </a>
-                        <a href="https://wa.me/79211115005" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant hover:text-secondary transition-colors" aria-label="WhatsApp">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512" fill="currentColor" class="w-7 h-7"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
-                        </a>
-                        <a href="https://t.me/Sytekuznica" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant hover:text-secondary transition-colors" aria-label="Telegram">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <section class="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
+        <div
+          class="absolute top-1/4 left-1/4 w-96 h-96 bg-secondary-container/30 rounded-full blur-[150px] animate-blob"
+        ></div>
+        <div
+          class="absolute top-1/3 right-1/4 w-96 h-96 bg-tertiary-container/30 rounded-full blur-[150px] animate-blob animation-delay-2000"
+        ></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-gutter text-center reveal">
+          <div
+            id="hero-label"
+            class="inline-block mb-6 px-4 py-1.5 rounded-full glass-panel border border-white/10 font-label-sm text-secondary-fixed-dim uppercase tracking-widest text-xs"
+          >
+            Профессиональное продвижение компаний
+          </div>
+          <h1 class="text-display-xl-mobile md:text-display-xl font-bold mb-6 leading-tight text-on-surface">
+            <span id="hero-h1">Создание сайтов</span> <br class="hidden md:block" />
+            <span id="hero-h2" class="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-tertiary"
+              >под ключ в СайтКузница (sytekuznica)</span
+            >
+          </h1>
+          <p id="hero-desc" class="text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">
+            Мы создаем высокопроизводительные, доступные и визуально ошеломляющие веб-приложения и лендинги, которые
+            привлекают внимание клиентов и эффективно масштабируют ваш бизнес.
+          </p>
+          <a
+            href="https://t.me/Sytekuznica"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-order-tg btn-primary px-10 py-4 rounded-full font-bold text-lg shadow-[0_0_20px_rgba(49,49,192,0.6)] inline-block"
+          >
+            Заказать сайт
+          </a>
 
-        <!-- PORTFOLIO SECTION -->
-        <section id="portfolio" class="py-20">
-            <div class="max-w-container-max mx-auto px-gutter">
-                <div class="text-center mb-16 reveal">
-                    <h2 id="port-heading" class="text-headline-lg font-bold mb-4 text-on-surface">Избранные работы</h2>
-                    <p id="port-desc" class="text-on-surface-variant max-w-2xl mx-auto">Витрина наших недавних проектов. Нажмите на карточку, чтобы посмотреть код на GitHub.</p>
-                </div>
-                <div class="flex justify-center reveal">
-                    <a href="https://github.com/Dan4ik-ice/my-portfolio-website" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl overflow-hidden group w-full max-w-2xl">
-                        <div class="aspect-video overflow-hidden relative">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" id="port-img" alt="Превью проекта портфолио на sytekuznica" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                            <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                <span id="port-overlay-text" class="text-white font-bold text-xl">Смотреть на GitHub</span>
-                            </div>
-                        </div>
-                        <div class="p-8">
-                            <span id="port-badge" class="text-secondary text-xs font-bold uppercase tracking-widest block mb-2">Основной проект</span>
-                            <h3 class="text-headline-md font-bold text-on-surface group-hover:text-tertiary transition-colors">My Portfolio Website</h3>
-                            <p id="port-proj-desc" class="text-on-surface-variant mt-2">Весь исходный код и структура моего актуального портфолио в одном репозитории.</p>
-                        </div>
-                    </a>
-                </div>
+          <div class="mt-16 flex flex-col items-center">
+            <span id="social-title" class="text-secondary-fixed-dim text-sm font-bold uppercase tracking-widest mb-6"
+              >Наши social-сети</span
+            >
+            <div class="flex gap-8" style="direction: ltr">
+              <a
+                href="https://www.instagram.com/dsite222/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-on-surface-variant hover:text-secondary transition-colors"
+                aria-label="Instagram"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/79211115005"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-on-surface-variant hover:text-secondary transition-colors"
+                aria-label="WhatsApp"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 448 512"
+                  fill="currentColor"
+                  class="w-7 h-7"
+                >
+                  <path
+                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://t.me/Sytekuznica"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-on-surface-variant hover:text-secondary transition-colors"
+                aria-label="Telegram"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m22 2-7 20-4-9-9-4Z" />
+                  <path d="M22 2 11 13" />
+                </svg>
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- PRICING SECTION -->
-        <section id="pricing" class="py-20 relative overflow-hidden">
-            <div class="max-w-container-max mx-auto px-gutter relative z-10">
-                <div class="text-center mb-16 reveal">
-                    <h2 id="price-heading" class="text-headline-lg font-bold mb-4 text-on-surface">Тарифы на создание сайтов</h2>
-                    <p id="price-desc" class="text-on-surface-variant max-w-2xl mx-auto">Прозрачное ценообразование под любые бизнес-задачи</p>
+      <section id="portfolio" class="py-20">
+        <div class="max-w-container-max mx-auto px-gutter">
+          <div class="text-center mb-16 reveal">
+            <h2 id="port-heading" class="text-headline-lg font-bold mb-4 text-on-surface">Избранные работы</h2>
+            <p id="port-desc" class="text-on-surface-variant max-w-2xl mx-auto">
+              Витрина наших недавних проектов. Нажмите на карточку, чтобы посмотреть код на GitHub.
+            </p>
+          </div>
+          <div class="flex justify-center reveal">
+            <a
+              href="https://github.com/Dan4ik-ice/my-portfolio-website"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="glass-card rounded-2xl overflow-hidden group w-full max-w-2xl"
+            >
+              <div class="aspect-video overflow-hidden relative">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                  id="port-img"
+                  alt="Превью проекта портфолио на sytekuznica"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div
+                  class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  <span id="port-overlay-text" class="text-white font-bold text-xl">Смотреть на GitHub</span>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <!-- Тариф 1 -->
-                    <div class="glass-card p-8 rounded-3xl reveal flex flex-col h-full">
-                        <h3 id="p1-name" class="text-2xl font-bold mb-4 text-on-surface">Лендинг проект</h3>
-                        <div class="flex items-baseline gap-2 mb-6 flex-wrap">
-                            <span id="p1-price" class="text-4xl font-bold text-secondary">7 990 ₽</span>
-                            <span id="p1-old" class="text-lg line-through text-on-surface-variant/50">15 980 ₽</span>
-                            <span class="text-sm font-bold text-on-surface-variant/40 ml-auto">50%</span>
-                        </div>
-                        <ul id="p1-features" class="space-y-4 mb-10 flex-grow"></ul>
-                        <a href="https://t.me/Sytekuznica" target="_blank" rel="noopener noreferrer" class="btn-choose-plan btn-primary w-full py-4 rounded-xl font-bold text-center block">Заказать тариф</a>
-                    </div>
-                    <!-- Тариф 2 -->
-                    <div class="glass-card p-8 rounded-3xl reveal flex flex-col h-full">
-                        <h3 id="p2-name" class="text-2xl font-bold mb-4 text-on-surface">Сайт для Бизнеса</h3>
-                        <div class="flex items-baseline gap-2 mb-6 flex-wrap">
-                            <span id="p2-price" class="text-4xl font-bold text-secondary">18 990 ₽</span>
-                            <span id="p2-old" class="text-lg line-through text-on-surface-variant/50">26 016 ₽</span>
-                            <span class="text-sm font-bold text-on-surface-variant/40 ml-auto">27%</span>
-                        </div>
-                        <ul id="p2-features" class="space-y-4 mb-10 flex-grow"></ul>
-                        <a href="https://t.me/Dsite222" target="_blank" rel="noopener noreferrer" class="btn-choose-plan btn-primary w-full py-4 rounded-xl font-bold text-center block">Заказать тариф</a>
-                    </div>
-                </div>
+              </div>
+              <div class="p-8">
+                <span id="port-badge" class="text-secondary text-xs font-bold uppercase tracking-widest block mb-2"
+                  >Основной проект</span
+                >
+                <h3 class="text-headline-md font-bold text-on-surface group-hover:text-tertiary transition-colors">
+                  My Portfolio Website
+                </h3>
+                <p id="port-proj-desc" class="text-on-surface-variant mt-2">
+                  Весь исходный код и структура моего актуального портфолио в одном репозитории.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="py-20 relative overflow-hidden">
+        <div class="max-w-container-max mx-auto px-gutter relative z-10">
+          <div class="text-center mb-16 reveal">
+            <h2 id="price-heading" class="text-headline-lg font-bold mb-4 text-on-surface">
+              Тарифы на создание сайтов
+            </h2>
+            <p id="price-desc" class="text-on-surface-variant max-w-2xl mx-auto">
+              Прозрачное ценообразование под любые бизнес-задачи
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="glass-card p-8 rounded-3xl reveal flex flex-col h-full">
+              <h3 id="p1-name" class="text-2xl font-bold mb-4 text-on-surface">Лендинг проект</h3>
+              <div class="flex items-baseline gap-2 mb-6 flex-wrap">
+                <span id="p1-price" class="text-4xl font-bold text-secondary">7 990 ₽</span>
+                <span id="p1-old" class="text-lg line-through text-on-surface-variant/50">15 980 ₽</span>
+                <span class="text-sm font-bold text-on-surface-variant/40 ml-auto">50%</span>
+              </div>
+              <ul id="p1-features" class="space-y-4 mb-10 flex-grow"></ul>
+              <a
+                href="https://t.me/Sytekuznica"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-choose-plan btn-primary w-full py-4 rounded-xl font-bold text-center block"
+                >Заказать тариф</a
+              >
             </div>
-        </section>
+            <div class="glass-card p-8 rounded-3xl reveal flex flex-col h-full">
+              <h3 id="p2-name" class="text-2xl font-bold mb-4 text-on-surface">Сайт для Бизнеса</h3>
+              <div class="flex items-baseline gap-2 mb-6 flex-wrap">
+                <span id="p2-price" class="text-4xl font-bold text-secondary">18 990 ₽</span>
+                <span id="p2-old" class="text-lg line-through text-on-surface-variant/50">26 016 ₽</span>
+                <span class="text-sm font-bold text-on-surface-variant/40 ml-auto">27%</span>
+              </div>
+              <ul id="p2-features" class="space-y-4 mb-10 flex-grow"></ul>
+              <a
+                href="https://t.me/Sytekuznica"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-choose-plan btn-primary w-full py-4 rounded-xl font-bold text-center block"
+                >Заказать тариф</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="glass-panel border-t border-white/10 pt-16 pb-8 mt-20">
-        <div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="text-secondary w-6 h-6"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                <span class="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-secondary to-tertiary">sytekuznica</span>
-            </div>
-            <p class="text-on-surface-variant text-sm">© <span id="footer-year">2026</span> sytekuznica. <span id="footer-rights">Все права защищены.</span></p>
+      <div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="text-secondary w-6 h-6"
+          >
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          <span class="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-secondary to-tertiary"
+            >sytekuznica</span
+          >
         </div>
+        <p class="text-on-surface-variant text-sm">
+          © <span id="footer-year">2026</span> sytekuznica.
+          <span id="footer-rights">Все права защищены. СайтКузница.</span>
+        </p>
+      </div>
     </footer>
 
-    <!-- ЧИСТЫЙ JS С ПОЛНОЙ РЕАЛИЗАЦИЕЙ ВСЕХ 15 ЯЗЫКОВ -->
     <script>
-        const TELEGRAM_LINK = "https://t.me/Sytekuznica"; 
-        
-        // Валюты и коэффициенты
-        const currencyConfig = {
-            RU: { symbol: '₽', exchangeRate: 1.00, locale: 'ru-RU', suffix: true },
-            EN: { symbol: '$', exchangeRate: 0.011, locale: 'en-US', suffix: false },
-            ES: { symbol: '€', exchangeRate: 0.010, locale: 'es-ES', suffix: false },
-            FR: { symbol: '€', exchangeRate: 0.010, locale: 'fr-FR', suffix: false },
-            AR: { symbol: '؜$', exchangeRate: 0.011, locale: 'ar-AE', suffix: true },
-            ZH: { symbol: '¥', exchangeRate: 0.079, locale: 'zh-CN', suffix: false },
-            JA: { symbol: '¥', exchangeRate: 1.58, locale: 'ja-JP', suffix: false },
-            KO: { symbol: '₩', exchangeRate: 14.85, locale: 'ko-KR', suffix: false },
-            PT: { symbol: '€', exchangeRate: 0.010, locale: 'pt-PT', suffix: false },
-            TR: { symbol: '₺', exchangeRate: 0.38, locale: 'tr-TR', suffix: false },
-            IT: { symbol: '€', exchangeRate: 0.010, locale: 'it-IT', suffix: false },
-            HI: { symbol: '₹', exchangeRate: 0.94, locale: 'hi-IN', suffix: false },
-            NL: { symbol: '€', exchangeRate: 0.010, locale: 'nl-NL', suffix: false },
-            PL: { symbol: 'zł', exchangeRate: 0.044, locale: 'pl-PL', suffix: true },
-            SV: { symbol: 'kr', exchangeRate: 0.12, locale: 'sv-SE', suffix: true }
-        };
+      const TELEGRAM_LINK = "https://t.me/Sytekuznica";
 
-        const languagesData = [
-            { code: 'RU', name: 'Russian' }, { code: 'EN', name: 'English' }, { code: 'ES', name: 'Spanish' },
-            { code: 'FR', name: 'French' }, { code: 'AR', name: 'Arabic' }, { code: 'ZH', name: 'Chinese' },
-            { code: 'JA', name: 'Japanese' }, { code: 'KO', name: 'Korean' }, { code: 'PT', name: 'Portuguese' },
-            { code: 'TR', name: 'Turkish' }, { code: 'IT', name: 'Italian' }, { code: 'HI', name: 'Hindi' },
-            { code: 'NL', name: 'Dutch' }, { code: 'PL', name: 'Polish' }, { code: 'SV', name: 'Swedish' }
-        ];
+      // Валюты и коэффициенты
+      const currencyConfig = {
+        RU: { symbol: "₽", exchangeRate: 1.0, locale: "ru-RU", suffix: true },
+        EN: { symbol: "$", exchangeRate: 0.011, locale: "en-US", suffix: false },
+        ES: { symbol: "€", exchangeRate: 0.01, locale: "es-ES", suffix: false },
+        FR: { symbol: "€", exchangeRate: 0.01, locale: "fr-FR", suffix: false },
+        AR: { symbol: "؜$", exchangeRate: 0.011, locale: "ar-AE", suffix: true },
+        ZH: { symbol: "¥", exchangeRate: 0.079, locale: "zh-CN", suffix: false },
+        JA: { symbol: "¥", exchangeRate: 1.58, locale: "ja-JP", suffix: false },
+        KO: { symbol: "₩", exchangeRate: 14.85, locale: "ko-KR", suffix: false },
+        PT: { symbol: "€", exchangeRate: 0.01, locale: "pt-PT", suffix: false },
+        TR: { symbol: "₺", exchangeRate: 0.38, locale: "tr-TR", suffix: false },
+        IT: { symbol: "€", exchangeRate: 0.01, locale: "it-IT", suffix: false },
+        HI: { symbol: "₹", exchangeRate: 0.94, locale: "hi-IN", suffix: false },
+        NL: { symbol: "€", exchangeRate: 0.01, locale: "nl-NL", suffix: false },
+        PL: { symbol: "zł", exchangeRate: 0.044, locale: "pl-PL", suffix: true },
+        SV: { symbol: "kr", exchangeRate: 0.12, locale: "sv-SE", suffix: true },
+      };
 
-        // ПОЛНАЯ РЕАЛИЗАЦИЯ ПЕРЕВОДОВ ДЛЯ ВСЕХ 15 ЯЗЫКОВ
-        const baseTranslations = {
-            RU: {
-                seoTitle: "sytekuznica — Создание сайтов под ключ | Профессиональная веб-разработка",
-                seoDesc: "sytekuznica занимается разработкой высокопроизводительных веб-приложений и сайтов. Закажите создание сайтов прямо сейчас.",
-                navBenefits: "Преимущества", navPortfolio: "Портфолио", navPricing: "Цены", btnOrder: "Заказать сайт",
-                heroLabel: "Профессиональное продвижение компаний", heroH1: "Создание сайтов", heroH2: "под ключ в sytekuznica",
-                heroDesc: "Мы создаем высокопроизводительные, доступные и визуально ошеломляющие веб-приложения и лендинги.",
-                socialTitle: "Наши социальные сети", portHeading: "Избранные работы", portDesc: "Витрина наших недавних проектов. Нажмите на карточку, чтобы посмотреть код на GitHub.",
-                portOverlay: "Смотреть на GitHub", portBadge: "Основной проект", portProjDesc: "Весь исходный код и структура моего актуального портфолио в одном репозитории.",
-                priceHeading: "Тарифы на создание сайтов", priceDesc: "Прозрачное ценообразование под любые бизнес-задачи", btnChoose: "Заказать тариф", footerRights: "Все права защищены.",
-                p1Name: "Лендинг проект", p2Name: "Сайт для Бизнеса",
-                p1Features: ["Одностраничный сайт", "Адаптивный дизайн", "SEO-оптимизация кода", "Срок 3-5 дней"],
-                p2Features: ["Многостраничный сайт", "Индивидуальный дизайн", "Настройка веб-аналитики", "Срок 7-14 дней"]
-            },
-            EN: {
-                seoTitle: "sytekuznica — Custom Web Development | High-Performance Websites",
-                seoDesc: "sytekuznica builds high-performance, accessible, and visually stunning web applications. Order your custom website today.",
-                navBenefits: "Benefits", navPortfolio: "Portfolio", navPricing: "Pricing", btnOrder: "Order a Site",
-                heroLabel: "Professional Business Promotion", heroH1: "Website Creation", heroH2: "Turnkey by sytekuznica",
-                heroDesc: "We build high-performance, accessible, and visually stunning web applications and landing pages.",
-                socialTitle: "Our Social Media", portHeading: "Selected Works", portDesc: "A showcase of our recent projects. Click on the card to view the code on GitHub.",
-                portOverlay: "View on GitHub", portBadge: "Main Project", portProjDesc: "All the source code and structure of my current portfolio in one repository.",
-                priceHeading: "Pricing Plans", priceDesc: "Transparent pricing for your web development tasks", btnChoose: "Order Plan", footerRights: "All rights reserved.",
-                p1Name: "Landing Project", p2Name: "Business Site",
-                p1Features: ["Single-page site", "Responsive design", "SEO optimization", "3-5 days delivery"],
-                p2Features: ["Multi-page site", "Custom design", "Analytics setup", "7-14 days delivery"]
-            },
-            ES: {
-                seoTitle: "sytekuznica — Desarrollo Web Profesional | Sitios a Medida",
-                seoDesc: "sytekuznica crea aplicaciones web de alto rendimiento. Ordene su sitio web hoy.",
-                navBenefits: "Beneficios", navPortfolio: "Portafolio", navPricing: "Precios", btnOrder: "Pedir un Sitio",
-                heroLabel: "Promoción Profesional de Negocios", heroH1: "Creación de Sitios", heroH2: "Llave en Mano por sytekuznica",
-                heroDesc: "Creamos aplicaciones web y páginas de destino de alto rendimiento, accesibles и visualmente impresionantes.",
-                socialTitle: "Nuestras Redes Sociales", portHeading: "Trabajos Destacados", portDesc: "Una muestra de nuestros proyectos recientes. Haga clic para ver el código en GitHub.",
-                portOverlay: "Ver en GitHub", portBadge: "Proyecto Principal", portProjDesc: "Todo el código fuente y la estructura de mi portafolio actual.",
-                priceHeading: "Planes de Precios", priceDesc: "Precios transparentes para todas las necesidades de su negocio", btnChoose: "Elegir Plan", footerRights: "Todos los derechos reservados.",
-                p1Name: "Proyecto Landing", p2Name: "Sitio para Negocios",
-                p1Features: ["Sitio de una página", "Diseño adaptativo", "Optimización SEO", "Entrega en 3-5 días"],
-                p2Features: ["Sitio multipágina", "Diseño personalizado", "Configuración de analítica", "Entrega en 7-14 días"]
-            },
-            FR: {
-                seoTitle: "sytekuznica — Création de Sites Web Clé en Main",
-                seoDesc: "sytekuznica développe des applications web performantes. Commandez votre site aujourd'hui.",
-                navBenefits: "Avantages", navPortfolio: "Portfolio", navPricing: "Tarifs", btnOrder: "Commander un Site",
-                heroLabel: "Promotion Professionnelle des Entreprises", heroH1: "Création de Sites", heroH2: "Clé en Main par sytekuznica",
-                heroDesc: "Nous créons des applications web et des landing pages hautement performantes et esthétiques.",
-                socialTitle: "Nos Réseaux Sociaux", portHeading: "Travaux Sélectionnés", portDesc: "Découvrez nos projets récents. Cliquez pour voir le code sur GitHub.",
-                portOverlay: "Voir sur GitHub", portBadge: "Projet Principal", portProjDesc: "Tout le code source et la structure de mon portfolio actuel.",
-                priceHeading: "Grille Tarifaire", priceDesc: "Des tarifs transparents adaptés à vos objectifs commerciaux", btnChoose: "Choisir un Tarif", footerRights: "Tous droits réservés.",
-                p1Name: "Projet Landing", p2Name: "Site Professionnel",
-                p1Features: ["Site d'une page", "Design réactif", "Optimisation SEO", "Délai 3-5 jours"],
-                p2Features: ["Site multipage", "Design sur mesure", "Configuration analytique", "Délai 7-14 jours"]
-            },
-            AR: {
-                seoTitle: "sytekuznica — تطوير مواقع الويب الاحترافية",
-                seoDesc: "تقوم sytekuznica بتطوير تطبيقات ومواقع ويب عالية الأداء ومخصصة لأعمالك.",
-                navBenefits: "المميزات", navPortfolio: "المعرض", navPricing: "الأسعار", btnOrder: "طلب موقع",
-                heroLabel: "التسويق الاحترافي للشركات", heroH1: "إنشاء المواقع", heroH2: "بالكامل بواسطة sytekuznica",
-                heroDesc: "نحن نصمم تطبيقات ويب وصفحات هبوط عالية الأداء، متجاوبة وجذابة بصرياً.",
-                socialTitle: "وسائل التواصل الاجتماعي", portHeading: "أعمال مختارة", portDesc: "عرض لمشاريعنا الأخيرة. انقر فوق البطاقة لعرض الكود على GitHub.",
-                portOverlay: "عرض على GitHub", portBadge: "المشروع الرئيسي", portProjDesc: "كافة الأكواد البرمجية وهيكل معرض أعمالي الحالي.",
-                priceHeading: "خطط الأسعار", priceDesc: "أسعار شفافة تناسب جميع متطلبات عملك", btnChoose: "طلب الخطة", footerRights: "جميع الحقوق محفوظة.",
-                p1Name: "صفحة هبوط", p2Name: "موقع للشركات",
-                p1Features: ["موقع من صفحة واحدة", "تصميم متجاوب", "تحسين محركات البحث", "التسليم خلال 3-5 أيام"],
-                p2Features: ["موقع متعدد الصفحات", "تصميم مخصص", "إعداد التحليلات", "التسليم خلال 7-14 أيام"]
-            },
-            ZH: {
-                seoTitle: "sytekuznica — 专业网站定制开发 | 高性能网站建设",
-                seoDesc: "sytekuznica 致力于构建高性能、美观且现代化的定制网站。立即预订您的专属网站。",
-                navBenefits: "我们的优势", navPortfolio: "核心作品", navPricing: "服务价格", btnOrder: "立即定制",
-                heroLabel: "全方位企业数字营销推广", heroH1: "高端网站建设", heroH2: "由 sytekuznica 全包定制",
-                heroDesc: "我们打造卓越性能、全端自适应、视觉震撼的 Web 应用程序和高转化落地页。",
-                socialTitle: "官方社交媒体", portHeading: "精选案例展示", portDesc: "我们近期的项目视窗。点击卡片前往 GitHub 查看源码。",
-                portOverlay: "在 GitHub 查看", portBadge: "核心推荐项目", portProjDesc: "包含我当前最新个人作品集的完整源码和架构。",
-                priceHeading: "透明化价格套餐", priceDesc: "针对各类企业商业目标的清晰定价与开发方案", btnChoose: "预订此套餐", footerRights: "保留所有权利。",
-                p1Name: "单页落地页开发", p2Name: "标准企业官网",
-                p1Features: ["单页面落地页", "全端响应式设计", "代码级标准 SEO 优化", "3-5 个工作日交付"],
-                p2Features: ["多页面全面布局", "独家个性化定制设计", "完整数据网站分析配置", "7-14 个工作日交付"]
-            },
-            JA: {
-                seoTitle: "sytekuznica — フルカスタムWebサイト制作 | 高性能開発",
-                seoDesc: "sytekuznicaは高品質で高性能なWebアプリケーションを制作します。今すぐWebサイト制作をご相談ください。",
-                navBenefits: "強み", navPortfolio: "制作実績", navPricing: "料金プラン", btnOrder: "サイトを注文する",
-                heroLabel: "プロフェッショナルな企業プロモーション", heroH1: "Webサイト制作", heroH2: "sytekuznicaによる完全おまかせ開発",
-                heroDesc: "最高水準のパフォーマンスと美しさを兼ね備えたWebアプリやランディングページを構築します。",
-                socialTitle: "ソーシャルメディア", portHeading: "実績紹介", portDesc: "最近のプロジェクトです。カードをクリックするとGitHubでコードをご覧いただけます。",
-                portOverlay: "GitHubで見る", portBadge: "主要プロジェクト", portProjDesc: "現在のポートフォリオの全ソースコードと構造を収録。",
-                priceHeading: "料金プラン", priceDesc: "ビジネスの課題に応じた明確で透明な価格設定", btnChoose: "プランを申し込む", footerRights: "All rights reserved.",
-                p1Name: "LP制作プラン", p2Name: "ビジネス向けサイト",
-                p1Features: ["シングルページ（LP）", "レスポンシブ対応", "SEOコード最適化", "納期：3〜5日"],
-                p2Features: ["マルチページ構成", "オリジナルデザイン", "Web解析ツールの設定", "納期：7〜14日"]
-            },
-            KO: {
-                seoTitle: "sytekuznica — 맞춤형 웹사이트 제작 | 고성능 웹 개발",
-                seoDesc: "sytekuznica는 비즈니스의 확장을 돕는 고성능 맞춤형 웹사이트와 랜딩페이지를 개발합니다.",
-                navBenefits: "주요 이점", navPortfolio: "포트폴리오", navPricing: "가격 안내", btnOrder: "사이트 제작 신청",
-                heroLabel: "전문적인 기업 브랜드 마케팅 및 홍보", heroH1: "웹사이트 제작 및 개발", heroH2: "sytekuznica 완제품 맞춤 서비스",
-                heroDesc: "고객의 시선을 사로잡고 비즈니스를 확장할 수 있는 고성능 반응형 웹 애플리케이션을 만듭니다.",
-                socialTitle: "공식 소셜 미디어", portHeading: "주요 포트폴리오", portDesc: "최근 프로젝트 쇼케이스입니다. 카드를 클릭하면 GitHub에서 코드를 확인할 수 있습니다.",
-                portOverlay: "GitHub에서 보기", portBadge: "메인 프로젝트", portProjDesc: "현재 실제 포트폴리오의 전체 소스 코드 및 구조 구조화.",
-                priceHeading: "가격 정책 및 타리프", priceDesc: "비즈니스 규모와 목적에 맞춘 정직하고 투명한 요금제", btnChoose: "타리프 선택하기", footerRights: "모든 권리 보유.",
-                p1Name: "랜딩 페이지 프로젝트", p2Name: "비즈니스 전문 웹사이트",
-                p1Features: ["단일 페이지 사이트", "모바일 반응형 디자인", "검색엔진 SEO 최적화", "3-5일 소요"],
-                p2Features: ["다중 페이지 구성", "1:1 인디비주얼 디자인", "웹 로그 분석 세팅", "7-14일 소요"]
-            },
-            PT: {
-                seoTitle: "sytekuznica — Criação de Sites Profissionais Clback-Key",
-                seoDesc: "A sytekuznica desenvolve aplicações web de alta performance para impulsionar o seu negócio.",
-                navBenefits: "Vantagens", navPortfolio: "Portfólio", navPricing: "Preços", btnOrder: "Pedir um Site",
-                heroLabel: "Promoção Profissional de Empresas", heroH1: "Criação de Sites", heroH2: "Chave na Mão pela sytekuznica",
-                heroDesc: "Criamos aplicações web e landing pages de alto rendimento, totalmente responsivas e visuais.",
-                socialTitle: "Nossas Redes Sociais", portHeading: "Trabalhos Selecionados", portDesc: "Vitrine de projetos recentes. Clique no card para ver o código no GitHub.",
-                portOverlay: "Ver no GitHub", portBadge: "Projeto Principal", portProjDesc: "Todo o código-fonte e estrutura do meu portfólio atual em um repositório.",
-                priceHeading: "Planos de Preços", priceDesc: "Preços claros e ajustados para os seus objetivos de negócio", btnChoose: "Contratar Plano", footerRights: "Todos os direitos reservados.",
-                p1Name: "Projeto Landing", p2Name: "Website de Negócios",
-                p1Features: ["Site de página única", "Design responsivo", "Otimização estrutural SEO", "Prazo de 3-5 dias"],
-                p2Features: ["Website multipágina", "Design personalizado", "Configuração de analítica web", "Prazo de 7-14 dias"]
-            },
-            TR: {
-                seoTitle: "sytekuznica — Anahtar Teslim Web Sitesi Yapımı | Profesyonel",
-                seoDesc: "sytekuznica işletmeniz için yüksek performanslı web tasarımları geliştirir. Hemen sitenizi sipariş edin.",
-                navBenefits: "Avantajlar", navPortfolio: "Portfolyo", navPricing: "Fiyatlar", btnOrder: "Sipariş Ver",
-                heroLabel: "Profesyonel Kurumsal Tanıtım", heroH1: "Web Sitesi Kurulumu", heroH2: "sytekuznica Güvencesiyle",
-                heroDesc: "Müşterilerinizin ilgisini çekecek yüksek hızlı, erişilebilir web projeleri ve web siteleri üretiyoruz.",
-                socialTitle: "Sosyal Medya Hesaplarımız", portHeading: "Öne Çıkan Çalışmalar", portDesc: "Son projelerimizden bazıları. GitHub üzerindeki kodları incelemek için karta tıklayın.",
-                portOverlay: "GitHub'da İncele", portBadge: "Ana Proje", portProjDesc: "Güncel portfolyomun tüm kaynak kodları ve tüm klasör hiyerarşisi.",
-                priceHeading: "Hizmet Paketleri", priceDesc: "İş hedeflerinize uygun tamamen şeffaf fiyatlandırma politikası", btnChoose: "Paketi Seç", footerRights: "Tüm hakları saklıdır.",
-                p1Name: "Landing Sayfası", p2Name: "Kurumsal İş Sitesi",
-                p1Features: ["Tek sayfa web sitesi", "Mobil uyumlu tasarım", "SEO kod optimizasyonu", "3-5 gün teslimat"],
-                p2Features: ["Çok sayfalı web sitesi", "Özel arayüz tasarımı", "Web analitik kurulumları", "7-14 gün teslimat"]
-            },
-            IT: {
-                seoTitle: "sytekuznica — Creazione Siti Web Professionali Chiavi in Mano",
-                seoDesc: "sytekuznica progetta e sviluppa applicazioni web e siti ad alte prestazioni per aziende.",
-                navBenefits: "Vantaggi", navPortfolio: "Portfolio", navPricing: "Prezzi", btnOrder: "Ordina un Sito",
-                heroLabel: "Promozione Professionale per Aziende", heroH1: "Creazione Siti Web", heroH2: "Chiavi in Mano da sytekuznica",
-                heroDesc: "Sviluppiamo applicazioni web e landing page performanti, accessibili e di forte impatto visivo.",
-                socialTitle: "I Nostri Canali Social", portHeading: "Lavori Selezionati", portDesc: "Una panoramica dei progetti recenti. Clicca sulla scheda per vedere il codice su GitHub.",
-                portOverlay: "Vedi su GitHub", portBadge: "Progetto Principale", portProjDesc: "Il codice sorgente completo e l'architettura del mio portfolio attuale.",
-                priceHeading: "Tariffe e Piani", priceDesc: "Prezzi trasparenti e modulati sulle reali esigenze di business", btnChoose: "Scegli il Piano", footerRights: "Tutti i diritti riservati.",
-                p1Name: "Progetto Landing", p2Name: "Sito per il Business",
-                p1Features: ["Sito a pagina singola", "Design responsive", "Ottimizzazione SEO del codice", "Consegna 3-5 giorni"],
-                p2Features: ["Sito multipagina", "Design su misura esclusivo", "Configurazione analytics", "Consegna 7-14 giorni"]
-            },
-            HI: {
-                seoTitle: "sytekuznica — टर्नकी वेबसाइट निर्माण | व्यावसायिक वेब विकास",
-                seoDesc: "sytekuznica आपके व्यवसाय के लिए उच्च-प्रदर्शन वाले वेब एप्लिकेशन और वेबसाइट बनाती है।",
-                navBenefits: "हमारे लाभ", navPortfolio: "पोर्टफोलियो", navPricing: "कीमतें", btnOrder: "वेबसाइट ऑर्डर करें",
-                heroLabel: "कंपनियों का व्यावसायिक प्रचार", heroH1: "वेबसाइट निर्माण", heroH2: "sytekuznica द्वारा टर्नकी समाधान",
-                heroDesc: "हम उच्च-प्रदर्शन वाले और शानदार दिखने वाले वेब एप्लिकेशन और लैंडिंग पेज बनाते हैं।",
-                socialTitle: "हमारे सोशल नेटवर्क", portHeading: "चुनिंदा कार्य", portDesc: "हमारे हालिया प्रोजेक्ट्स। गिटहब पर कोड देखने के लिए कार्ड पर क्लिक करें।",
-                portOverlay: "GitHub पर देखें", portBadge: "मुख्य परियोजना", portProjDesc: "एक ही रिपॉजिटरी में मेरे वर्तमान पोर्टफोलियो का पूरा सोर्स कोड।",
-                priceHeading: "कीमतें और दरें", priceDesc: "सभी व्यावसायिक कार्यों के लिए पारदर्शी मूल्य निर्धारण", btnChoose: "प्लान चुनें", footerRights: "सभी अधिकार सुरक्षित हैं।",
-                p1Name: "लैंडिंग पेज प्रोजेक्ट", p2Name: "बिजनेस वेबसाइट",
-                p1Features: ["एक पेज की वेबसाइट", "उत्तरदायी डिजाइन", "एसईओ अनुकूलन कोड", "3-5 दिनों का समय"],
-                p2Features: ["मल्टी-पेज वेबसाइट", "कस्टम डिजाइन", "वेब एनालिटिक्स सेटअप", "7-14 दिनों का समय"]
-            },
-            NL: {
-                seoTitle: "sytekuznica — Professionele Website Ontwikkeling Clback-Key",
-                seoDesc: "sytekuznica bouwt krachtige, toegankelijke en visueel verbluffende webapplicaties voor uw bedrijf.",
-                navBenefits: "Voordelen", navPortfolio: "Portfolio", navPricing: "Tarieven", btnOrder: "Site Bestellen",
-                heroLabel: "Professionele Bedrijfspromotie", heroH1: "Websites Maken", heroH2: "Sleutel-op-de-deur door sytekuznica",
-                heroDesc: "Wij maken krachtige, responsieve en visueel verbluffende webapplicaties en landingspagina's.",
-                socialTitle: "Onze Sociale Media", portHeading: "Geselecteerd Werk", portDesc: "Een overzicht van recente projecten. Klik op de kaart om de code op GitHub te bekijken.",
-                portOverlay: "Bekijk op GitHub", portBadge: "Hoofdproject", portProjDesc: "Alle broncode en de volledige structuur van mijn huidige portfolio.",
-                priceHeading: "Tarieven & Pakketten", priceDesc: "Transparante prijzen afgestemd op al uw zakelijke doelstellingen", btnChoose: "Kies Pakket", footerRights: "Alle rechten voorbehouden.",
-                p1Name: "Landing Project", p2Name: "Zakelijke Website",
-                p1Features: ["Single-page website", "Responsive design", "SEO-code optimalisatie", "Binnen 3-5 dagen"],
-                p2Features: ["Multi-page website", "Uniek maatwerk design", "Inrichting webstatistieken", "Binnen 7-14 dagen"]
-            },
-            PL: {
-                seoTitle: "sytekuznica — Tworzenie Stron Internetowych | Kompleksowo",
-                seoDesc: "sytekuznica projektuje nowoczesne i wydajne strony oraz aplikacje webowe dostosowane do biznesu.",
-                navBenefits: "Zalety", navPortfolio: "Portfolio", navPricing: "Cennik", btnOrder: "Zamów Stronę",
-                heroLabel: "Profesjonalna Promocja i Rozwój Firm", heroH1: "Tworzenie Stron", heroH2: "Pod Klucz w sytekuznica",
-                heroDesc: "Tworzymy szybkie, responsywne oraz unikalne wizualnie aplikacje internetowe i landing page.",
-                socialTitle: "Nasze Media Społecznościowe", portHeading: "Wybrane Projekty", portDesc: "Prezentacja ostatnich prac. Kliknij kartę, aby zobaczyć kod źródłowy na GitHubie.",
-                portOverlay: "Zobacz na GitHub", portBadge: "Główny Projekt", portProjDesc: "Pełny kod źródłowy oraz kompletna struktura mojego aktualnego portfolio.",
-                priceHeading: "Pakiety Cenowe", priceDesc: "Przejrzysty cennik dopasowany do celów biznesowych Twojej działalności", btnChoose: "Wybierz Pakiet", footerRights: "Wszelkie prawa zastrzeżone.",
-                p1Name: "Projekt Landing Page", p2Name: "Strona dla Biznesu",
-                p1Features: ["Strona jednoustronowa", "Responsywny design", "Optymalizacja kodu pod SEO", "Czas realizacji 3-5 dni"],
-                p2Features: ["Strona wielostronicowa", "Indywidualny projekt graficzny", "Konfiguracja analityki", "Czas realizacji 7-14 dni"]
-            },
-            SV: {
-                seoTitle: "sytekuznica — Professionell Webbdesign & Hemsidor",
-                seoDesc: "sytekuznica skapar högpresterande och visuellt slående webbapplikationer och hemsidor.",
-                navBenefits: "Fördelar", navPortfolio: "Portfolio", navPricing: "Priser", btnOrder: "Beställ Hemsida",
-                heroLabel: "Professionell Företagsmarknadsföring", heroH1: "Skapa Hemsida", heroH2: "Nyckelfärdigt via sytekuznica",
-                heroDesc: "Vi bygger högpresterande, tillgängliga och moderna webbapplikationer och landningssidor.",
-                socialTitle: "Våra Sociala Medier", portHeading: "Utvalda Projekt", portDesc: "Här visas våra senaste arbeten. Klicka på kortet för att se koden på GitHub.",
-                portOverlay: "Visa på GitHub", portBadge: "Huvudprojekt", portProjDesc: "Hela källkoden och filstrukturen för min nuvarande portfolio i ett arkiv.",
-                priceHeading: "Prisplaner", priceDesc: "Tydlig prissättning för alla typer av digitala utmaningar", btnChoose: "Välj Prisplan", footerRights: "Alla rättigheter förbehållna.",
-                p1Name: "Landningssida Project", p2Name: "Företagshemsida",
-                p1Features: ["Enstaka landningssida", "Responsiv design", "SEO-optimering av kod", "Leverans 3-5 dagar"],
-                p2Features: ["Flersidig webbplats", "Skräddarsydd design", "Konfiguration av webbanalys", "Leverans 7-14 dagar"]
-            }
-        };
+      const languagesData = [
+        { code: "RU", name: "Russian" },
+        { code: "EN", name: "English" },
+        { code: "ES", name: "Spanish" },
+        { code: "FR", name: "French" },
+        { code: "AR", name: "Arabic" },
+        { code: "ZH", name: "Chinese" },
+        { code: "JA", name: "Japanese" },
+        { code: "KO", name: "Korean" },
+        { code: "PT", name: "Portuguese" },
+        { code: "TR", name: "Turkish" },
+        { code: "IT", name: "Italian" },
+        { code: "HI", name: "Hindi" },
+        { code: "NL", name: "Dutch" },
+        { code: "PL", name: "Polish" },
+        { code: "SV", name: "Swedish" },
+      ];
 
-        let currentLang = 'RU';
+      // ПОЛНАЯ РЕАЛИЗАЦИЯ ПЕРЕВОДОВ ДЛЯ ВСЕХ 15 ЯЗЫКОВ С СЕО ДЛЯ КУЗНИЦЫ
+      const baseTranslations = {
+        RU: {
+          seoTitle: "СайтКузница (sytekuznica) — Создание сайтов под ключ | Профессиональная веб-разработка",
+          seoDesc:
+            "СайтКузница (sytekuznica) занимается разработкой высокопроизводительных веб-приложений и сайтов. Закажите создание сайтов прямо сейчас.",
+          navBenefits: "Преимущества",
+          navPortfolio: "Портфолио",
+          navPricing: "Цены",
+          btnOrder: "Заказать сайт",
+          heroLabel: "Профессиональное продвижение компаний",
+          heroH1: "Создание сайтов",
+          heroH2: "под ключ в СайтКузница (sytekuznica)",
+          heroDesc: "Мы создаем высокопроизводительные, доступные и визуально ошеломляющие веб-приложения и лендинги.",
+          socialTitle: "Наши социальные сети",
+          portHeading: "Избранные работы",
+          portDesc: "Витрина наших недавних проектов. Нажмите на карточку, чтобы посмотреть код на GitHub.",
+          portOverlay: "Смотреть на GitHub",
+          portBadge: "Основной проект",
+          portProjDesc: "Весь исходный код и структура моего актуального портфолио в одном репозитории.",
+          priceHeading: "Тарифы на создание сайтов",
+          priceDesc: "Прозрачное ценообразование под любые бизнес-задачи",
+          btnChoose: "Заказать тариф",
+          footerRights: "Все права защищены. СайтКузница.",
+          p1Name: "Лендинг проект",
+          p2Name: "Сайт для Бизнеса",
+          p1Features: ["Одностраничный сайт", "Адаптивный дизайн", "SEO-оптимизация кода", "Срок 3-5 дней"],
+          p2Features: ["Многостраничный сайт", "Индивидуальный дизайн", "Настройка веб-аналитики", "Срок 7-14 дней"],
+        },
+        EN: {
+          seoTitle: "sytekuznica — Custom Web Development | High-Performance Websites",
+          seoDesc:
+            "sytekuznica builds high-performance, accessible, and visually stunning web applications. Order your custom website today.",
+          navBenefits: "Benefits",
+          navPortfolio: "Portfolio",
+          navPricing: "Pricing",
+          btnOrder: "Order a Site",
+          heroLabel: "Professional Business Promotion",
+          heroH1: "Website Creation",
+          heroH2: "Turnkey by sytekuznica",
+          heroDesc: "We build high-performance, accessible, and visually stunning web applications and landing pages.",
+          socialTitle: "Our Social Media",
+          portHeading: "Selected Works",
+          portDesc: "A showcase of our recent projects. Click on the card to view the code on GitHub.",
+          portOverlay: "View on GitHub",
+          portBadge: "Main Project",
+          portProjDesc: "All the source code and structure of my current portfolio in one repository.",
+          priceHeading: "Pricing Plans",
+          priceDesc: "Transparent pricing for your web development tasks",
+          btnChoose: "Order Plan",
+          footerRights: "All rights reserved.",
+          p1Name: "Landing Project",
+          p2Name: "Business Site",
+          p1Features: ["Single-page site", "Responsive design", "SEO optimization", "3-5 days delivery"],
+          p2Features: ["Multi-page site", "Custom design", "Analytics setup", "7-14 days delivery"],
+        },
+        ES: {
+          seoTitle: "sytekuznica — Desarrollo Web Profesional | Sitios a Medida",
+          seoDesc: "sytekuznica crea aplicaciones web de alto rendimiento. Ordene su sitio web hoy.",
+          navBenefits: "Beneficios",
+          navPortfolio: "Portafolio",
+          navPricing: "Precios",
+          btnOrder: "Pedir un Sitio",
+          heroLabel: "Promoción Profesional de Negocios",
+          heroH1: "Creación de Sitios",
+          heroH2: "Llave en Mano por sytekuznica",
+          heroDesc:
+            "Creamos aplicaciones web y páginas de destino de alto rendimiento, accesibles y visualmente impresionantes.",
+          socialTitle: "Nuestras Redes Sociales",
+          portHeading: "Trabajos Destacados",
+          portDesc: "Una muestra de nuestros proyectos recientes. Haga clic para ver el código en GitHub.",
+          portOverlay: "Ver en GitHub",
+          portBadge: "Proyecto Principal",
+          portProjDesc: "Todo el código fuente y la estructura de mi portafolio actual.",
+          priceHeading: "Planes de Precios",
+          priceDesc: "Precios transparentes para todas las necesidades de su negocio",
+          btnChoose: "Elegir Plan",
+          footerRights: "Todos los derechos reservados.",
+          p1Name: "Proyecto Landing",
+          p2Name: "Sitio para Negocios",
+          p1Features: ["Sitio de una página", "Diseño adaptativo", "Optimización SEO", "Entrega en 3-5 días"],
+          p2Features: [
+            "Sitio multipágina",
+            "Diseño personalizado",
+            "Configuración de analítica",
+            "Entrega en 7-14 días",
+          ],
+        },
+        FR: {
+          seoTitle: "sytekuznica — Création de Sites Web Clé en Main",
+          seoDesc: "sytekuznica développe des applications web performantes. Commandez votre site aujourd'hui.",
+          navBenefits: "Avantages",
+          navPortfolio: "Portfolio",
+          navPricing: "Tarifs",
+          btnOrder: "Commander un Site",
+          heroLabel: "Promotion Professionnelle des Entreprises",
+          heroH1: "Création de Sites",
+          heroH2: "Clé en Main par sytekuznica",
+          heroDesc: "Nous créons des applications web et des landing pages hautement performantes et esthétiques.",
+          socialTitle: "Nos Réseaux Sociaux",
+          portHeading: "Travaux Sélectionnés",
+          portDesc: "Découvrez nos projets récents. Cliquez pour voir le code sur GitHub.",
+          portOverlay: "Voir sur GitHub",
+          portBadge: "Projet Principal",
+          portProjDesc: "Tout le code source et la structure of mon portfolio actuel.",
+          priceHeading: "Grille Tarifaire",
+          priceDesc: "Des tarifs transparents adaptés à vos objectifs commerciaux",
+          btnChoose: "Choisir un Tarif",
+          footerRights: "Tous droits réservés.",
+          p1Name: "Projet Landing",
+          p2Name: "Site Professionnel",
+          p1Features: ["Site d'une page", "Design réactif", "Optimisation SEO", "Délai 3-5 jours"],
+          p2Features: ["Site multipage", "Design sur mesure", "Configuration analytique", "Délai 7-14 jours"],
+        },
+        AR: {
+          seoTitle: "sytekuznica — تطوير مواقع الويب الاحترافية",
+          seoDesc: "تقوم sytekuznica بتطوير تطبيقات ومواقع ويب عالية الأداء ومخصصة لأعمالك.",
+          navBenefits: "المميزات",
+          navPortfolio: "المعرض",
+          navPricing: "الأسعار",
+          btnOrder: "طلب موقع",
+          heroLabel: "التسويق الاحترافي للشركات",
+          heroH1: "إنشاء المواقع",
+          heroH2: "بالكامل بواسطة sytekuznica",
+          heroDesc: "نحن نصمم تطبيقات ويب وصفحات هبوط عالية الأداء، متجاوبة وجذابة بصرياً.",
+          socialTitle: "وسائل التواصل الاجتماعي",
+          portHeading: "أعمال مختارة",
+          portDesc: "عرض لمشاريعنا الأخيرة. انقر فوق البطاقة لعرض الكود على GitHub.",
+          portOverlay: "عرض على GitHub",
+          portBadge: "المشروع الرئيسي",
+          portProjDesc: "كافة الأكواد البرمجية وهيكل معرض أعمالي الحالي.",
+          priceHeading: "خطط الأسعار",
+          priceDesc: "أسعار شفافة تناسب جميع متطلبات عملك",
+          btnChoose: "طلب الخطة",
+          footerRights: "جميع الحقوق محفوظة.",
+          p1Name: "صفحة هبوط",
+          p2Name: "موقع للشركات",
+          p1Features: ["موقع من صفحة واحدة", "تصميم متجاوب", "تحسين محركات البحث", "التسليم خلال 3-5 أيام"],
+          p2Features: ["موقع متعدد الصفحات", "تصميم مخصص", "إعداد التحليلات", "التسليم خلال 7-14 أيام"],
+        },
+        ZH: {
+          seoTitle: "sytekuznica — 专业网站定制开发 | 高性能网站建设",
+          seoDesc: "sytekuznica 致力于构建高性能、美观且现代化的定制网站。立即预订您的专属网站。",
+          navBenefits: "我们的优势",
+          navPortfolio: "核心作品",
+          navPricing: "服务价格",
+          btnOrder: "立即定制",
+          heroLabel: "全方位企业数字营销推广",
+          heroH1: "高端网站建设",
+          heroH2: "由 sytekuznica 全包定制",
+          heroDesc: "我们打造卓越性能、全端自适应、视觉震撼的 Web 应用程序和高转化落地页。",
+          socialTitle: "官方社交媒体",
+          portHeading: "精选案例展示",
+          portDesc: "我们近期的项目视窗。点击卡片前往 GitHub 查看源码。",
+          portOverlay: "在 GitHub 查看",
+          portBadge: "核心推荐项目",
+          portProjDesc: "包含我当前最新个人作品集的完整源码和架构。",
+          priceHeading: "透明化价格套餐",
+          priceDesc: "针对各类企业商业目标的清晰定价与开发方案",
+          btnChoose: "预订此套餐",
+          footerRights: "保留所有权利。",
+          p1Name: "单页落地页开发",
+          p2Name: "标准企业官网",
+          p1Features: ["单页面落地页", "全端响应式设计", "代码级标准 SEO 优化", "3-5 个工作日交付"],
+          p2Features: ["多页面全面布局", "独家个性化定制设计", "完整数据网站分析配置", "7-14 个工作日交付"],
+        },
+        JA: {
+          seoTitle: "sytekuznica — フルカスタムWebサイト制作 | 高性能開発",
+          seoDesc:
+            "sytekuznicaは高品質で高性能なWebアプリケーションを制作します。今すぐWebサイト制作をご相談ください。",
+          navBenefits: "強み",
+          navPortfolio: "制作実績",
+          navPricing: "料金プラン",
+          btnOrder: "サイトを注文する",
+          heroLabel: "プロフェッショナルな企業プロモーション",
+          heroH1: "Webサイト制作",
+          heroH2: "sytekuznicaによる完全おまかせ開発",
+          heroDesc: "最高水準のパフォーマンスと美しさを兼ね備えたWebアプリやランディングページを構築します。",
+          socialTitle: "ソーシャルメディア",
+          portHeading: "実績紹介",
+          portDesc: "最近のプロジェクトです。カードをクリックするとGitHubでコードをご覧いただけます。",
+          portOverlay: "GitHubで見る",
+          portBadge: "主要プロジェクト",
+          portProjDesc: "現在のポートフォリオの全ソースコードと構造を収録。",
+          priceHeading: "料金プラン",
+          priceDesc: "ビジネスの課題に応じた明確で透明な価格設定",
+          btnChoose: "プランを申し込む",
+          footerRights: "All rights reserved.",
+          p1Name: "LP制作プラン",
+          p2Name: "ビジネス向けサイト",
+          p1Features: ["シングルページ（LP）", "レスポンシブ対応", "SEOコード最適化", "納期：3〜5日"],
+          p2Features: ["マルチページ構成", "オリジナルデザイン", "Web解析ツールの設定", "納期：7〜14日"],
+        },
+        KO: {
+          seoTitle: "sytekuznica — 맞춤형 웹사이트 제작 | 고성능 웹 개발",
+          seoDesc: "sytekuznica는 비즈니스의 확장을 돕는 고성능 맞춤형 웹사이트와 랜딩페이지를 개발합니다.",
+          navBenefits: "주요 이점",
+          navPortfolio: "포트폴리오",
+          navPricing: "가격 안내",
+          btnOrder: "사이트 제작 신청",
+          heroLabel: "전문적인 기업 브랜드 마케팅 및 홍보",
+          heroH1: "웹사이트 제작 및 개발",
+          heroH2: "sytekuznica 완제품 맞춤 서비스",
+          heroDesc: "고객의 시선을 사로잡고 비즈니스를 확장할 수 있는 고성능 반응형 웹 애플리케이션을 만듭니다.",
+          socialTitle: "공식 소셜 미디어",
+          portHeading: "주요 포트폴리오",
+          portDesc: "최근 프로젝트 쇼케이스입니다. 카드를 클릭하면 GitHub에서 코드를 확인할 수 있습니다.",
+          portOverlay: "GitHub에서 보기",
+          portBadge: "메인 프로젝트",
+          portProjDesc: "현재 실제 포트폴리오의 전체 소스 코드 및 구조 구조화.",
+          priceHeading: "가격 정책 및 타리프",
+          priceDesc: "비즈니스 규모와 목적에 맞춘 정직하고 투명한 요금제",
+          btnChoose: "타리프 선택하기",
+          footerRights: "모든 권리 보유.",
+          p1Name: "랜딩 페이지 프로젝트",
+          p2Name: "비즈니스 전문 웹사이트",
+          p1Features: ["단일 페이지 사이트", "모바일 반응형 디자인", "검색엔진 SEO 최적화", "3-5일 소요"],
+          p2Features: ["다중 페이지 구성", "1:1 인디비주얼 디자인", "웹 로그 분석 세팅", "7-14일 소요"],
+        },
+        PT: {
+          seoTitle: "sytekuznica — Criação de Sites Profissionais Clback-Key",
+          seoDesc: "A sytekuznica desenvolve aplicações web de alta performance para impulsionar o seu negócio.",
+          navBenefits: "Vantagens",
+          navPortfolio: "Portfólio",
+          navPricing: "Preços",
+          btnOrder: "Pedir um Site",
+          heroLabel: "Promoção Profissional de Empresas",
+          heroH1: "Criação de Sites",
+          heroH2: "Chave na Mão pela sytekuznica",
+          heroDesc: "Criamos aplicações web e landing pages de alto rendimento, totalmente responsivas e visuais.",
+          socialTitle: "Nossas Redes Sociais",
+          portHeading: "Trabalhos Selecionados",
+          portDesc: "Vitrine de projetos recentes. Clique no card para ver o código no GitHub.",
+          portOverlay: "Ver no GitHub",
+          portBadge: "Projeto Principal",
+          portProjDesc: "Todo o código-fonte e estrutura do meu portfólio atual em um repositório.",
+          priceHeading: "Planos de Preços",
+          priceDesc: "Preços claros e ajustados para os seus objetivos de negócio",
+          btnChoose: "Contratar Plano",
+          footerRights: "Todos os direitos reservados.",
+          p1Name: "Projeto Landing",
+          p2Name: "Website de Negócios",
+          p1Features: ["Site de página única", "Design responsivo", "Otimização estrutural SEO", "Prazo de 3-5 dias"],
+          p2Features: [
+            "Website multipágina",
+            "Design personalizado",
+            "Configuração de analítica web",
+            "Prazo de 7-14 dias",
+          ],
+        },
+        TR: {
+          seoTitle: "sytekuznica — Anahtar Teslim Web Sitesi Yapımı | Profesyonel",
+          seoDesc:
+            "sytekuznica işletmeniz için yüksek performanslı web tasarımları geliştirir. Hemen sitenizi sipariş edin.",
+          navBenefits: "Avantajlar",
+          navPortfolio: "Portfolyo",
+          navPricing: "Fiyatlar",
+          btnOrder: "Sipariş Ver",
+          heroLabel: "Profesyonel Kurumsal Tanıtım",
+          heroH1: "Web Sitesi Kurulumu",
+          heroH2: "sytekuznica Güvencesiyle",
+          heroDesc:
+            "Müşterilerinizin ilgisini çekecek yüksek hızlı, erişilebilir web projeleri ve web siteleri üretiyoruz.",
+          socialTitle: "Sosyal Medya Hesaplarımız",
+          portHeading: "Öne Çıkan Çalışmalar",
+          portDesc: "Son projelerimizden bazıları. GitHub üzerindeki kodları incelemek için karta tıklayın.",
+          portOverlay: "GitHub'da İncele",
+          portBadge: "Ana Proje",
+          portProjDesc: "Güncel portfolyomun tüm kaynak kodları ve tüm klasör hiyerarşisi.",
+          priceHeading: "Hizmet Paketleri",
+          priceDesc: "İş hedeflerinize uygun tamamen şeffaf fiyatlandırma politikası",
+          btnChoose: "Paketi Seç",
+          footerRights: "Tüm hakları saklıdır.",
+          p1Name: "Landing Sayfası",
+          p2Name: "Kurumsal İş Sitesi",
+          p1Features: ["Tek sayfa web sitesi", "Mobil uyumlu tasarım", "SEO kod optimizasyonu", "3-5 gün teslimat"],
+          p2Features: [
+            "Çok sayfalı web sitesi",
+            "Özel arayüz tasarımı",
+            "Web analitik kurulumları",
+            "7-14 gün teslimat",
+          ],
+        },
+        IT: {
+          seoTitle: "sytekuznica — Creazione Siti Web Professionali Chiavi in Mano",
+          seoDesc: "sytekuznica progetta e sviluppa applicazioni web e siti ad alte prestazioni per aziende.",
+          navBenefits: "Vantaggi",
+          navPortfolio: "Portfolio",
+          navPricing: "Prezzi",
+          btnOrder: "Ordina un Sito",
+          heroLabel: "Promozione Professionale per Aziende",
+          heroH1: "Creazione Siti Web",
+          heroH2: "Chiavi in Mano da sytekuznica",
+          heroDesc: "Sviluppiamo applicazioni web e landing page performanti, accessibili e di forte impatto visivo.",
+          socialTitle: "I Nostri Canali Social",
+          portHeading: "Lavori Selezionati",
+          portDesc: "Una panoramica dei progetti recenti. Clicca sulla scheda per vedere il codice su GitHub.",
+          portOverlay: "Vedi su GitHub",
+          portBadge: "Progetto Principale",
+          portProjDesc: "Il codice sorgente completo e l'architettura del mio portfolio attuale.",
+          priceHeading: "Tariffe e Piani",
+          priceDesc: "Prezzi trasparenti e modulati sulle reali esigenze di business",
+          btnChoose: "Scegli il Piano",
+          footerRights: "Tutti i diritti riservati.",
+          p1Name: "Progetto Landing",
+          p2Name: "Sito per il Business",
+          p1Features: [
+            "Sito a pagina singola",
+            "Design responsive",
+            "Ottimizzazione SEO del codice",
+            "Consegna 3-5 giorni",
+          ],
+          p2Features: [
+            "Sito multipagina",
+            "Design su misura esclusivo",
+            "Configurazione analytics",
+            "Consegna 7-14 giorni",
+          ],
+        },
+        HI: {
+          seoTitle: "sytekuznica — टर्नकी वेबसाइट निर्माण | व्यावसायिक वेब विकास",
+          seoDesc: "sytekuznica आपके व्यवसाय के लिए उच्च-प्रदर्शन वाले वेब एप्लिकेशन और वेबसाइट बनाती है।",
+          navBenefits: "हमारे लाभ",
+          navPortfolio: "पोर्टफोलियो",
+          navPricing: "कीमतें",
+          btnOrder: "वेबसाइट ऑर्डर करें",
+          heroLabel: "कंपनियों का व्यावसायिक प्रचार",
+          heroH1: "वेबसाइट निर्माण",
+          heroH2: "sytekuznica द्वारा टर्नकी समाधान",
+          heroDesc: "हम उच्च-प्रदर्शन वाले और शानदार दिखने वाले वेब एप्लिकेशन और लैंडिंग पेज बनाते हैं।",
+          socialTitle: "हमारे सोशल नेटवर्क",
+          portHeading: "चुниंदा कार्य",
+          portDesc: "हमारे हालिया प्रोजेक्ट्स। गิตहब पर कोड देखने के लिए कार्ड पर क्लिक करें।",
+          portOverlay: "GitHub पर देखें",
+          portBadge: "मुख्य परियोजना",
+          portProjDesc: "एक ही रिपॉजिटरी में मेरे वर्तमान पोर्टफोलियो का पूरा सोर्स कोड।",
+          priceHeading: "कीमतें और दरें",
+          priceDesc: "सभी व्यावसायिक कार्यों के लिए पारदर्शी मूल्य निर्धारण",
+          btnChoose: "प्लान चुनें",
+          footerRights: "सभी अधिकार सुरक्षित हैं।",
+          p1Name: "लैंडिंग पेज प्रोजेक्ट",
+          p2Name: "बिजनेस वेबसाइट",
+          p1Features: ["एक पेज की वेबसाइट", "उत्तरदायी डिजाइन", "एसईओ अनुकूलन код", "3-5 दिनों का समय"],
+          p2Features: ["मल्टी-पेज वेबसाइट", "कस्टम डिजाइन", "वेब एनालिटिक्स सेटअप", "7-14 दिनों का समय"],
+        },
+        NL: {
+          seoTitle: "sytekuznica — Professionele Website Ontwikkeling Clback-Key",
+          seoDesc: "sytekuznica bouwt krachtige, toegankelijke en visueel verbluffende webapplicaties voor uw bedrijf.",
+          navBenefits: "Voordelen",
+          navPortfolio: "Portfolio",
+          navPricing: "Tarieven",
+          btnOrder: "Site Bestellen",
+          heroLabel: "Professionele Bedrijfspromotie",
+          heroH1: "Websites Maken",
+          heroH2: "Sleutel-op-de-deur door sytekuznica",
+          heroDesc: "Wij maken krachtige, responsieve en visueel verbluffende webapplicaties en landingspagina's.",
+          socialTitle: "Onze Sociale Media",
+          portHeading: "Geselecteerd Werk",
+          portDesc: "Een overzicht van recente projecten. Klik op de kaart om de code op GitHub te bekijken.",
+          portOverlay: "Bekijk op GitHub",
+          portBadge: "Hoofdproject",
+          portProjDesc: "Alle broncode en de volledige structuur van mijn huidige portfolio.",
+          priceHeading: "Tarieven & Pakketten",
+          priceDesc: "Transparante prijzen afgestemd op al uw zakelijke doelstellingen",
+          btnChoose: "Kies Pakket",
+          footerRights: "Alle rechten voorbehouden.",
+          p1Name: "Landing Project",
+          p2Name: "Zakelijke Website",
+          p1Features: ["Single-page website", "Responsive design", "SEO-code optimalisatie", "Binnen 3-5 dagen"],
+          p2Features: [
+            "Multi-page website",
+            "Uniek maatwerk design",
+            "Inrichting webstatistieken",
+            "Binnen 7-14 dagen",
+          ],
+        },
+        PL: {
+          seoTitle: "sytekuznica — Tworzenie Stron Internetowych | Kompleksowo",
+          seoDesc: "sytekuznica projektuje nowoczesne i wydajne strony oraz aplikacje webowe dostosowane do biznesu.",
+          navBenefits: "Zalety",
+          navPortfolio: "Portfolio",
+          navPricing: "Cennik",
+          btnOrder: "Zamów Stronę",
+          heroLabel: "Profesjonalna Promocja i Rozwój Firm",
+          heroH1: "Tworzenie Stron",
+          heroH2: "Pod Klucz w sytekuznica",
+          heroDesc: "Tworzymy szybkie, responsywne oraz unikalne wizualnie aplikacje internetowe i landing page.",
+          socialTitle: "Nasze Media Społecznościowe",
+          portHeading: "Wybrane Projekty",
+          portDesc: "Prezentacja ostatnich prac. Kliknij kartę, aby zobaczyć kod źródłowy na GitHubie.",
+          portOverlay: "Zobacz na GitHub",
+          portBadge: "Główny Projekt",
+          portProjDesc: "Pełny kod źródłowy oraz kompletna struktura mojego aktualnego portfolio.",
+          priceHeading: "Pakiety Cenowe",
+          priceDesc: "Przejrzysty cennik dopasowany do celów biznesowych Twojej działalności",
+          btnChoose: "Wybierz Pakiet",
+          footerRights: "Wszelkie prawa zastrzeżone.",
+          p1Name: "Projekt Landing Page",
+          p2Name: "Strona dla Biznesu",
+          p1Features: [
+            "Strona jednoustronowa",
+            "Responsywny design",
+            "Optymalizacja kodu pod SEO",
+            "Czas realizacji 3-5 dni",
+          ],
+          p2Features: [
+            "Strona wielostronicowa",
+            "Indywidualny projekt graficzny",
+            "Konfiguracja analityki",
+            "Czas realizacji 7-14 dni",
+          ],
+        },
+        SV: {
+          seoTitle: "sytekuznica — Professionell Webbdesign & Hemsidor",
+          seoDesc: "sytekuznica skapar högpresterande och visuellt slående webbapplikationer och hemsidor.",
+          navBenefits: "Fördelar",
+          navPortfolio: "Portfolio",
+          navPricing: "Priser",
+          btnOrder: "Beställ Hemsida",
+          heroLabel: "Professionell Företagsmarknadsföring",
+          heroH1: "Skapa Hemsida",
+          heroH2: "Nyckelfärdigt via sytekuznica",
+          heroDesc: "Vi bygger högpresterande, tillgängliga och moderna webbapplikationer och landningssidor.",
+          socialTitle: "Våra Sociala Medier",
+          portHeading: "Utvalda Projekt",
+          portDesc: "Här visas våra senaste arbeten. Klicka på kortet för att se koden på GitHub.",
+          portOverlay: "Visa på GitHub",
+          portBadge: "Huvudprojekt",
+          portProjDesc: "Hela källkoden och filstrukturen för min nuvarande portfolio i ett arkiv.",
+          priceHeading: "Prisplaner",
+          priceDesc: "Tydlig prissättning för alla typer av digitala utmaningar",
+          btnChoose: "Välj Prisplan",
+          footerRights: "Alla rättigheter förbehållna.",
+          p1Name: "Landningssida Project",
+          p2Name: "Företagshemsida",
+          p1Features: ["Enstaka landningssida", "Responsiv design", "SEO-optimering av kod", "Leverans 3-5导"],
+          p2Features: [
+            "Flersidig webbplats",
+            "Skräddarsydd design",
+            "Konfiguration av webbanalys",
+            "Leverans 7-14 dagar",
+          ],
+        },
+      };
 
-        function getTranslation(lang) {
-            return baseTranslations[lang] || baseTranslations['EN'];
-        }
+      let currentLang = "RU";
 
-        function formatPrice(baseRub, lang) {
-            const cfg = currencyConfig[lang] || currencyConfig['RU'];
-            const converted = Math.round(baseRub * cfg.exchangeRate);
-            const formattedNum = converted.toLocaleString(cfg.locale);
-            return cfg.suffix ? `${formattedNum} ${cfg.symbol}` : `${cfg.symbol}${formattedNum}`;
-        }
+      function getTranslation(lang) {
+        return baseTranslations[lang] || baseTranslations["EN"];
+      }
 
-        function buildDropdown() {
-            const dropdown = document.getElementById('lang-dropdown');
-            dropdown.innerHTML = '';
-            languagesData.forEach(l => {
-                const isSelected = currentLang === l.code;
-                const btn = document.createElement('button');
-                btn.onclick = () => changeLanguage(l.code);
-                btn.className = `w-full text-left px-4 py-2.5 text-sm hover:bg-white/10 transition-colors ${isSelected ? 'text-secondary font-bold bg-white/5' : 'text-on-surface-variant'}`;
-                btn.innerText = l.name;
-                dropdown.appendChild(btn);
-            });
-        }
+      function formatPrice(baseRub, lang) {
+        const cfg = currencyConfig[lang] || currencyConfig["RU"];
+        const converted = Math.round(baseRub * cfg.exchangeRate);
+        const formattedNum = converted.toLocaleString(cfg.locale);
+        return cfg.suffix ? `${formattedNum} ${cfg.symbol}` : `${cfg.symbol}${formattedNum}`;
+      }
 
-        function updateUI() {
-            const t = getTranslation(currentLang);
-            
-            document.documentElement.lang = currentLang.toLowerCase();
-            document.title = t.seoTitle;
-            document.getElementById('meta-description').setAttribute('content', t.seoDesc);
+      function buildDropdown() {
+        const dropdown = document.getElementById("lang-dropdown");
+        dropdown.innerHTML = "";
+        languagesData.forEach((l) => {
+          const isSelected = currentLang === l.code;
+          const btn = document.createElement("button");
+          btn.onclick = () => changeLanguage(l.code);
+          btn.className = `w-full text-left px-4 py-2.5 text-sm hover:bg-white/10 transition-colors ${isSelected ? "text-secondary font-bold bg-white/5" : "text-on-surface-variant"}`;
+          btn.innerText = l.name;
+          dropdown.appendChild(btn);
+        });
+      }
 
-            document.getElementById('current-lang').innerText = currentLang;
-            document.getElementById('nav-benefits').innerText = t.navBenefits;
-            document.getElementById('nav-portfolio').innerText = t.navPortfolio;
-            document.getElementById('nav-pricing').innerText = t.navPricing;
-            
-            document.querySelectorAll('.btn-order-tg').forEach(btn => btn.innerText = t.btnOrder);
-            document.querySelectorAll('.btn-choose-plan').forEach(btn => btn.innerText = t.btnChoose);
+      function updateUI() {
+        const t = getTranslation(currentLang);
 
-            document.getElementById('hero-label').innerText = t.heroLabel;
-            document.getElementById('hero-h1').innerText = t.heroH1;
-            document.getElementById('hero-h2').innerText = t.heroH2;
-            document.getElementById('hero-desc').innerText = t.heroDesc;
-            document.getElementById('social-title').innerText = t.socialTitle;
+        document.documentElement.lang = currentLang.toLowerCase();
+        document.title = t.seoTitle;
+        document.getElementById("meta-description").setAttribute("content", t.seoDesc);
 
-            document.getElementById('port-heading').innerText = t.portHeading;
-            document.getElementById('port-desc').innerText = t.portDesc;
-            document.getElementById('port-overlay-text').innerText = t.portOverlay;
-            document.getElementById('port-badge').innerText = t.portBadge;
-            document.getElementById('port-proj-desc').innerText = t.portProjDesc;
+        document.getElementById("current-lang").innerText = currentLang;
+        document.getElementById("nav-benefits").innerText = t.navBenefits;
+        document.getElementById("nav-portfolio").innerText = t.navPortfolio;
+        document.getElementById("nav-pricing").innerText = t.navPricing;
 
-            document.getElementById('price-heading').innerText = t.priceHeading;
-            document.getElementById('price-desc').innerText = t.priceDesc;
-            
-            document.getElementById('p1-name').innerText = t.p1Name;
-            document.getElementById('p1-price').innerText = formatPrice(7990, currentLang);
-            document.getElementById('p1-old').innerText = formatPrice(15980, currentLang);
-            
-            document.getElementById('p2-name').innerText = t.p2Name;
-            document.getElementById('p2-price').innerText = formatPrice(18990, currentLang);
-            document.getElementById('p2-old').innerText = formatPrice(26016, currentLang);
+        document.querySelectorAll(".btn-order-tg").forEach((btn) => (btn.innerText = t.btnOrder));
+        document.querySelectorAll(".btn-choose-plan").forEach((btn) => (btn.innerText = t.btnChoose));
 
-            renderFeatures('p1-features', t.p1Features);
-            renderFeatures('p2-features', t.p2Features);
+        document.getElementById("hero-label").innerText = t.heroLabel;
+        document.getElementById("hero-h1").innerText = t.heroH1;
+        document.getElementById("hero-h2").innerText = t.heroH2;
+        document.getElementById("hero-desc").innerText = t.heroDesc;
+        document.getElementById("social-title").innerText = t.socialTitle;
 
-            document.getElementById('footer-rights').innerText = t.footerRights;
-            document.getElementById('footer-year').innerText = new Date().getFullYear();
+        document.getElementById("port-heading").innerText = t.portHeading;
+        document.getElementById("port-desc").innerText = t.portDesc;
+        document.getElementById("port-overlay-text").innerText = t.portOverlay;
+        document.getElementById("port-badge").innerText = t.portBadge;
+        document.getElementById("port-proj-desc").innerText = t.portProjDesc;
 
-            buildDropdown();
-        }
+        document.getElementById("price-heading").innerText = t.priceHeading;
+        document.getElementById("price-desc").innerText = t.priceDesc;
 
-        function renderFeatures(elementId, featuresArray) {
-            const container = document.getElementById(elementId);
-            container.innerHTML = '';
-            featuresArray.forEach(text => {
-                const li = document.createElement('li');
-                li.className = "flex items-center gap-3 text-on-surface-variant";
-                li.innerHTML = `
+        document.getElementById("p1-name").innerText = t.p1Name;
+        document.getElementById("p1-price").innerText = formatPrice(7990, currentLang);
+        document.getElementById("p1-old").innerText = formatPrice(15980, currentLang);
+
+        document.getElementById("p2-name").innerText = t.p2Name;
+        document.getElementById("p2-price").innerText = formatPrice(18990, currentLang);
+        document.getElementById("p2-old").innerText = formatPrice(26016, currentLang);
+
+        renderFeatures("p1-features", t.p1Features);
+        renderFeatures("p2-features", t.p2Features);
+
+        document.getElementById("footer-rights").innerText = t.footerRights;
+        document.getElementById("footer-year").innerText = new Date().getFullYear();
+
+        buildDropdown();
+      }
+
+      function renderFeatures(elementId, featuresArray) {
+        const container = document.getElementById(elementId);
+        container.innerHTML = "";
+        featuresArray.forEach((text) => {
+          const li = document.createElement("li");
+          li.className = "flex items-center gap-3 text-on-surface-variant";
+          li.innerHTML = `
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-secondary shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
                     <span>${text}</span>
                 `;
-                container.appendChild(li);
-            });
-        }
-
-        function changeLanguage(lang) {
-            currentLang = lang;
-            updateUI();
-            document.getElementById('lang-dropdown').classList.add('hidden');
-            document.getElementById('lang-arrow').classList.remove('rotate-180');
-        }
-
-        document.getElementById('lang-btn').addEventListener('click', (e) => {
-            e.stopPropagation();
-            const dropdown = document.getElementById('lang-dropdown');
-            const arrow = document.getElementById('lang-arrow');
-            dropdown.classList.toggle('hidden');
-            arrow.classList.toggle('rotate-180');
+          container.appendChild(li);
         });
+      }
 
-        document.addEventListener('click', () => {
-            document.getElementById('lang-dropdown').classList.add('hidden');
-            document.getElementById('lang-arrow').classList.remove('rotate-180');
-        });
-
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 20) {
-                navbar.classList.add('nav-scrolled', 'py-4');
-                navbar.classList.remove('bg-transparent', 'py-6');
-            } else {
-                navbar.classList.remove('nav-scrolled', 'py-4');
-                navbar.classList.add('bg-transparent', 'py-6');
-            }
-        });
-
-        const reveals = document.querySelectorAll('.reveal');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('active');
-            });
-        }, { threshold: 0.1 });
-        reveals.forEach(reveal => observer.observe(reveal));
-
-        document.querySelectorAll('.btn-order-tg, .btn-choose-plan').forEach(el => el.href = TELEGRAM_LINK);
-
+      function changeLanguage(lang) {
+        currentLang = lang;
         updateUI();
+        document.getElementById("lang-dropdown").classList.add("hidden");
+        document.getElementById("lang-arrow").classList.remove("rotate-180");
+      }
+
+      document.getElementById("lang-btn").addEventListener("click", (e) => {
+        e.stopPropagation();
+        const dropdown = document.getElementById("lang-dropdown");
+        const arrow = document.getElementById("lang-arrow");
+        dropdown.classList.toggle("hidden");
+        arrow.classList.toggle("rotate-180");
+      });
+
+      document.addEventListener("click", () => {
+        document.getElementById("lang-dropdown").classList.add("hidden");
+        document.getElementById("lang-arrow").classList.remove("rotate-180");
+      });
+
+      window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 20) {
+          navbar.classList.add("nav-scrolled", "py-4");
+          navbar.classList.remove("bg-transparent", "py-6");
+        } else {
+          navbar.classList.remove("nav-scrolled", "py-4");
+          navbar.classList.add("bg-transparent", "py-6");
+        }
+      });
+
+      const reveals = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("active");
+          });
+        },
+        { threshold: 0.1 },
+      );
+      reveals.forEach((reveal) => observer.observe(reveal));
+
+      document.querySelectorAll(".btn-order-tg, .btn-choose-plan").forEach((el) => (el.href = TELEGRAM_LINK));
+
+      updateUI();
     </script>
-</body>
+  </body>
 </html>
